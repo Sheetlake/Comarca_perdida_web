@@ -4,6 +4,7 @@
 :root{
     --color-principal: #FFFFFF;
     --color-secondary: #329153;
+    --color-bgNavbar: #333946;
 }
 
 
@@ -56,8 +57,23 @@ body{
 
 /* ESTILOS DE CABECERA (header) */
 
+/*Aqui prácticamente solo se encuentra el logo*/
+
 .layout__header{
     grid-area: header;
+
+    width: 100%;
+    min-width: 100%;
+    padding: 2rem 0;
+}
+
+/*Para que el enlace no ocupe todo el layout header y solo ocupe la imagen.*/
+.header__link{
+    display: inline-block;
+}
+
+.header__img{
+    width: 17rem;
 }
 
 
@@ -65,6 +81,96 @@ body{
 
 .layout__nav{
     grid-area: nav;
+
+    position: relative;
+    width: 100%;
+}
+
+.nav__navbar{
+    /*Queremos los elementos distribuidos horizontalmente (en fila)
+    y con separacion entre ellos como un menu*/
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    
+    position: relative;
+
+    /*Tamaños*/
+    min-height: 5rem;
+    max-height: 5rem;
+    width: 100%;
+
+    background-color: var(--color-bgNavbar);
+    color: var(--color-principal);
+
+}
+
+/*La ul de navbar*/
+.navbar__list{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+/*Los li de la navbar*/
+.navbar__item{
+    height: 5rem;
+}
+
+.navbar__item:hover{
+    background-color: var(--color-secondary);
+}
+
+/*los a de la navbar con su texto*/
+.navbar__link{
+    font-weight: 700;
+    font-size: 1.3rem;
+    padding: 1.5rem 1.5rem;
+    color: var(--color-principal);
+}
+
+.navbar__search{
+    display: flex;
+    height: 100%;
+}
+
+.search__input{
+    width: 20rem;
+    height: 5rem;
+    font-size: 1.5rem;
+    background-color: var(--color-secondary);
+    color: var(--color-principal);
+    outline: none;
+    border: none;
+    transition: all 200ms ease-out;
+    
+    display: none; /*Queremos que esté oculto hasta que se pulse en la lupa*/
+}
+
+.search__input::placeholder{
+    padding: 0.5rem;
+    color: var(--color-principal);
+    opacity: 1;
+}
+
+
+.navbar__btn-search{
+    display: flex;
+    align-items: center;
+    height: 5rem;
+    padding: 0.8rem 1.3rem;
+    background-color: var(--color-secondary);
+}
+
+.navbar__btn-search .fa-solid{
+    cursor: pointer;
+    color: var(--color-principal);
+    font-size: 2.5rem;
+}
+
+.navbar__submenu{
+    display: none;
 }
 
 
