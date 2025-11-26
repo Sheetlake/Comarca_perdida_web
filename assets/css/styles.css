@@ -11,6 +11,8 @@
 
     --color-bgMarquee: #EEEEEE;
     --color-textMarquee: #7C7C7C;
+
+    --separacion-secciones: 3rem;
 }
 
 /*********************************************************************************************/
@@ -29,6 +31,42 @@ body{
     font-size: 1.6rem;
     background-color: var(--color-principal);
 }
+
+
+/*********************************************************************************************/
+/*ESTILOS SUBHEADERS - Son comunes*/
+/*********************************************************************************************/
+.news__subheader,
+.post__subheader, 
+.games__subheader,
+.login__subheader,
+.recent__subheader, 
+.videos__subheader,
+.highlights__subheader,
+.last-reviews__subheader{
+    width: 100%;
+    height: 3.5rem;
+    margin-bottom: 3rem;
+    background-color: var(--color-bgNavbar);
+    padding: 0.5rem;
+}
+
+.subheader__title,
+.news__title,
+.list-header__title,
+.list-header__link-title,
+.last-reviews__link-title{
+    display: inline;
+    padding: 0.5rem;
+    font-size: 1.3rem;
+    font-weight: 400;
+    text-transform: uppercase;
+    white-space: nowrap;
+    background-color: var(--color-secondary);
+    color: var(--color-principal);
+}
+
+
 
 
 /*********************************************************************************************/
@@ -415,7 +453,7 @@ body{
     height: 3.5rem;
     min-height: 3.5rem;
     padding: 0.5rem;
-    margin-bottom: 3rem; /*la separamos del contenido de abajo*/
+    margin-bottom: var(--separacion-secciones); /*la separamos del contenido de abajo*/
     overflow: hidden; /*Para que cuando se vayan saliendo los elementos se vayan escondiendo*/
     background-color: var(--color-bgMarquee);
 
@@ -487,13 +525,130 @@ body{
 
 .layout__slider{
     grid-area: slider;
+
+    width: 100%;
+    margin-bottom: var(--separacion-secciones);
+
+    display: grid;
+    grid-template-areas:"slider1 slider3 slider3 slider4"
+                        "slider2 slider3 slider3 slider5";
+    row-gap: 0.3rem;
+    column-gap: 0.3rem;
+}
+
+/*Distribuimos el grid*/
+.slider__container--slider1{
+    grid-area: slider1;
+}
+.slider__container--slider2{
+    grid-area: slider2;
+}
+.slider__container--slider3{
+    grid-area: slider3;
+}
+.slider__container--slider4{
+    grid-area: slider4;
+}
+.slider__container--slider5{
+    grid-area: slider5;
+}
+
+.slider__container{
+    overflow: hidden;
+    position: relative;
+    width: 100%;
+    height: 100%;
+}
+
+.slider__img{
+    width: 100%;
+    transition: all 300ms ease-in-out;
+}
+
+/*Efecto de zoom cuando pasamos por encima el raton*/
+.slider__container:hover .slider__img{
+    transform: scale(1.1);
 }
 
 
+/*Estilos a la informacion del slider*/
+.slider__info{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    padding: 1rem;
+    color: var(--color-principal);
+}
+
+/*Categoria*/
+.slider__category{
+    font-size: 1.2rem;
+    font-weight: 400;
+    text-shadow: 1px 1px 3px var(--color-bgNavbar) ;
+}
+
+/*Linea separadora*/
+.slider__line{
+    width: 5rem;
+    height: 0.2rem;
+    margin-top: 0.3rem;
+    margin-bottom: 0.3rem;
+    background-color: var(--color-secondary);
+}
+
+/*Texto*/
+.slider__link-title{
+    font-size: 1.5rem;
+    text-shadow: 1px 1px 3px var(--color-bgNavbar);
+    color: var(--color-principal);
+    text-transform: uppercase;
+}
+
+/*Nota en slider*/
+.slider__rating{
+    position: absolute;
+    top: 0.5rem;
+    right: 0.5rem;
+    width: 4rem;
+    height: 4rem;
+}
+
+/*Copiamos los estilos del container-rating*/
+.rating__circle{
+    width: 100%;
+    height: 100%;
+    padding: 0.2rem;
+    border-radius: 3.2rem;
+    background-color: var(--color-secondary);
+}
+
+.rating__border{
+    width: 100%;
+    height: 100%;
+    border-radius: 3.2rem;
+    border: 2px solid var(--color-principal);
+    
+    /*Para centrar la nota que esta dentro del borde*/
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/*La nota, el numero en si*/
+.rating__mark{
+    font-weight: 700;
+    color: var(--color-principal);
+}
+
+
+/*********************************************************************************************/
 /*ESTILOS MEJORES MOMENTOS (highlights)*/
+/*********************************************************************************************/
 
 .layout__highlights{
     grid-area: high;
+    margin-bottom: var(--separacion-secciones);
 }
 
 
