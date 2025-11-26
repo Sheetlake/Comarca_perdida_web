@@ -22,6 +22,96 @@ body{
     background-color: var(--color-principal);
 }
 
+
 /* BARRA DECORATIVA SUPERIOR */
 
+.decoration-bar{
+    width: 100%;
+    min-height: 25px;
+    background-color: var(--color-secondary);
+}
+
+
 /*ESTRUCTURA DEL LAYOUT*/
+
+.layout{
+    display: grid;
+    grid-template-areas:
+        "header header"
+        "nav nav"
+        "marquee marquee"
+        "slider slider"
+        "high high"
+        "videos videos"
+        "carousel carousel"
+        "main aside"    
+    ;
+    grid-template-columns: 70% 30%;
+    width: 55vw;
+    min-width: 100rem;
+    margin: 0 auto;
+}
+
+
+
+/* ESTILOS DE CABECERA (header) */
+
+.layout__header{
+    grid-area: header;
+}
+
+
+/* ESTILOS DE LA NAVEGACION (nav)*/
+
+.layout__nav{
+    grid-area: nav;
+}
+
+
+/* ESTILOS DE LA MARQUESINA*/
+
+.layout__marquee{
+    grid-area: marquee;
+}
+
+
+/* ESTILOS SLIDER */
+
+.layout__slider{
+    grid-area: slider;
+}
+
+
+/*ESTILOS MEJORES MOMENTOS (highlights)*/
+
+.layout__highlights{
+    grid-area: high;
+}
+
+
+/*ESTILOS VIDEOS*/
+
+.layout__videos{
+    grid-area: videos;
+}
+
+
+/*ESTILOS CARRUSEL (carousel)*/
+
+.layout__carousel-games{
+    grid-area: carousel;
+}
+
+
+/*ESTILOS CONTENIDO PRINCIPAL (main)*/
+
+.layout__main{
+    grid-area: main;
+}
+
+
+/*ESTILOS MENU LATERAL (aside)*/
+
+.layout__aside{
+    grid-area: aside;
+}
