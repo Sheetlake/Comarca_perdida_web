@@ -67,7 +67,43 @@ body{
     color: var(--color-principal);
 }
 
+/*********************************************************************************************/
+/*ESTILOS NOTAS*/
+/*********************************************************************************************/
 
+.container-rating__circle,  /*Circulo de la nota en el submenu*/
+.rating__circle             /*Circulo de la nota en el slider y el carrusel de articulos*/
+{
+    width: 100%;
+    height: 100%;
+    padding: 0.2rem;
+    border-radius: 3.2rem;
+    background-color: var(--color-secondary);
+}
+
+.container-rating__border,  /*Borde del circulo en el Submenu*/
+.rating__border,            /*Borde del circulo en el Slider*/
+.circle__border             /*Borde del círculo en el carrusel de articulos*/
+{            
+    width: 100%;
+    height: 100%;
+    border-radius: 3.2rem;
+    border: 2px solid var(--color-principal);
+    
+    /*Para centrar la nota que esta dentro del borde*/
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/*La nota, el numero en si*/
+.container-rating__mark,    /*Nota en el submenu*/
+.rating__mark,              /*Nota en el slider*/
+.circle__mark               /*Nota en el carrusel de articulos*/
+{
+    font-weight: 700;
+    color: var(--color-principal);
+}
 
 
 /*********************************************************************************************/
@@ -416,31 +452,6 @@ body{
     height: 4.8rem;
 }
 
-.container-rating__circle{
-    width: 100%;
-    height: 100%;
-    padding: 0.2rem;
-    border-radius: 3.2rem;
-    background-color: var(--color-secondary);
-}
-
-.container-rating__border{
-    width: 100%;
-    height: 100%;
-    border-radius: 3.2rem;
-    border: 2px solid var(--color-principal);
-    
-    /*Para centrar la nota que esta dentro del borde*/
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-/*La nota, el numero en si*/
-.container-rating__mark{
-    font-weight: 700;
-    color: var(--color-principal);
-}
 
 
 /*********************************************************************************************/
@@ -615,33 +626,6 @@ body{
     height: 4rem;
 }
 
-/*Copiamos los estilos del container-rating*/
-.rating__circle{
-    width: 100%;
-    height: 100%;
-    padding: 0.2rem;
-    border-radius: 3.2rem;
-    background-color: var(--color-secondary);
-}
-
-.rating__border{
-    width: 100%;
-    height: 100%;
-    border-radius: 3.2rem;
-    border: 2px solid var(--color-principal);
-    
-    /*Para centrar la nota que esta dentro del borde*/
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-/*La nota, el numero en si*/
-.rating__mark{
-    font-weight: 700;
-    color: var(--color-principal);
-}
-
 
 /*********************************************************************************************/
 /*ESTILOS MEJORES MOMENTOS (highlights)*/
@@ -653,7 +637,8 @@ body{
 }
 
 /*Contenedor de posts*/
-.highlights__posts{
+.highlights__posts,
+.posts__container{
     width: 100;
 
     display: flex;
@@ -662,30 +647,36 @@ body{
 }
 
 /*contenedor individual de cada post*/
-.highlights__post{
+.highlights__post,
+.posts__post{
     flex-basis: 33%;
     height: 100%;
     border-bottom: 1px solid var(--color-bgMarquee);
 }
 
 /*Contenedor de la imagen del post*/
-.highlights__image{
+.highlights__image,
+.post__container-image{
     position: relative;
     overflow: hidden;
 }
 
 /*Imagen del post en si*/
-.highlights__img{
+.highlights__img,
+.post__img{
     transition: all 300ms ease;
 }
 
-.highlights__img:hover{
+.highlights__img:hover,
+.post__img:hover{
     transform: scale(1.1);
 }
 
 
 /*Etiquetas de los post*/
-.highlights__category{
+.highlights__category,
+.game__container-category,
+.post__container-category{
     position: absolute;
     left: 0;
     bottom: 1rem;
@@ -695,12 +686,16 @@ body{
     transition: all 300ms;
 }
 
-.highlights__category:hover{
+.highlights__category:hover,
+.game__container-category:hover,
+.post__container-category:hover{
     background-color: var(--color-bgNavbar);
 }
 
 /*Texto de las etiquetas*/
-.highlights__name-category{
+.highlights__name-category,
+.game__category,
+.post__category{
     display: block;
     
     font-size: 1.1rem;
@@ -711,25 +706,29 @@ body{
 
 
 /*Titulos de los post*/
-.highlights__title{
+.highlights__title,
+.post__title{
     font-size: 1.9rem;
     text-transform: uppercase;
     margin-top: 1.5rem;
     margin-bottom: 1rem;    
 }
 
-.highlights__link{
+.highlights__link,
+.post__link{
     color: var(--color-titles);
     transition: all 300ms;
 }
 
-.highlights__title:hover .highlights__link{
+.highlights__title:hover .highlights__link,
+.post__title:hover .post__link{
     color: var(--color-secondary);
 }
 
 /*Informacion meta de los post (autor y fecha)*/
 /*Contenedor*/
-.highlights__meta{
+.highlights__meta,
+.post__meta{
     width: 100%;
     
     display: flex;
@@ -742,7 +741,10 @@ body{
 /*Autor*/
 .highlights__author,
 .main-video__author,
-.video__author{
+.video__author,
+.main-post__container-author,
+.news__author,
+.post__author{
     font-size: 1.1rem;
     font-weight: 500;
     text-transform: uppercase;
@@ -752,18 +754,21 @@ body{
 /*Fecha*/
 .highlights__date,
 .main-video__date,
-.video__date{
+.video__date,
+.main-post__date,
+.news__date,
+.post__date{
     font-size: 1.1rem;
     font-weight: 400;
     text-transform: uppercase;
     color: var(--color-bgNavbar);
-
 }
 
 
 /*Descripcion del post*/
 
-.highlights__description{
+.highlights__description,
+.post__description{
     font-size: 1.3rem;
     font-weight: 500;
     color: var(--color-titles);
@@ -774,12 +779,16 @@ body{
 
 /*footer de los posts (views y comments. Aprovechamos para reutilizarlos para el video principal*/
 
-.footer-post__container{
+.footer-post__container,
+.footer-info__container,
+.post__footer-post{
     gap: 1rem;
 }
 
 .highlights__footer-post, 
-.footer-post__container{
+.footer-post__container,
+.footer-info__container,
+.post__footer-post{
     display: flex;
     flex-direction: row;
     justify-content: space-between;
@@ -789,17 +798,23 @@ body{
 .footer-post__views, 
 .footer-post__comments,
 .main-video__views,
-.main-video__comments{
+.main-video__comments,
+.main-post__views,
+.main-post__comments
+{
     display: inline-block;
     font-size: 1.1rem;
     font-weight: 400;
     color: var(--color-textMarquee);
 }
 
-.footer-post__views fa-solid,
-.footer-post__comments fa-solid,
-.main-video__views fa-solid,
-.main-video__comments fa-solid{
+.footer-post__views .fa-solid,
+.footer-post__comments .fa-solid,
+.main-video__views .fa-solid,
+.main-video__comments .fa-solid,
+.main-post__views .fa-solid,
+.main-post__comments .fa-solid
+{
     margin-right: 0.2rem;
     font-size: 1.2rem;
 }
@@ -813,7 +828,9 @@ comporte como linea para que se posicione al lado*/
 
 /*Botón Leer más*/
 
-.footer-post__read-more{
+.footer-post__read-more,
+.main-post__read-more,
+.post__read-more{
     border: 1px solid var(--color-textMarquee);
     font-size: 1.1rem;
     font-weight: 500;
@@ -824,10 +841,11 @@ comporte como linea para que se posicione al lado*/
 }
 
 
-.footer-post__read-more:hover{
+.footer-post__read-more:hover,
+.main-post__read-more:hover,
+.post__read-more:hover{
     border: 1px solid var(--color-secondary);
     color: var(--color-secondary);
-
 }
 
 /*********************************************************************************************/
@@ -944,23 +962,393 @@ comporte como linea para que se posicione al lado*/
     gap: 1rem;
 }
 
-
+/*********************************************************************************************/
 /*ESTILOS CARRUSEL (carousel)*/
+/*********************************************************************************************/
 
 .layout__carousel-games{
     grid-area: carousel;
+    width: 100%;
+    padding: 3rem;
+    margin-bottom: 6rem;
+    background-color: var(--color-bgNavbar);
+}
+
+/*Lista de elementos*/
+.carousel-games__list{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    gap: 0.2rem;
+}
+
+.carousel-games__item{
+    position: relative;
+    overflow: hidden;
+}
+
+.carousel-games__img{
+    width: 100%;
+}
+
+/*Nota dentro del carrusel*/
+.carousel-games__rating{
+    position: absolute;
+    top: 0.5rem;
+    right: 0.5rem;
+    width: 4rem;
+    height: 4rem;
+}
+
+.carousel-games__info{
+    position: absolute;
+    top: 40%;
+    text-align: center;
+    padding: 0 1rem;
+    transition: all 300ms;
+}
+
+/*Categoria en el carrusel*/
+.carousel-games__category{
+    display: block;
+    font-size: 1.1rem;
+    font-weight: 500;
+    color: var(--color-principal);
+    text-shadow: 1px 1px 3px var(--color-titles);
+    transition: all 300ms ease;
+}
+
+.carousel-games__category:hover{
+    color: var(--color-secondary);
+}
+
+/*Linea separadora*/
+.carousel-games__line{
+    height: 0.2rem;
+    width: 4rem;
+    margin: 0.4rem auto;
+    background-color: var(--color-secondary);
 }
 
 
+/*Texto en el articulo del carrusel*/
+.carousel-games__title {
+    font-size: 1.8rem;
+    text-shadow: 1px 1px 3px var(--color-titles);    
+}
+
+.carousel-games__link{
+    color: var(--color-principal);
+    transition: all 300ms ease;
+}
+
+.carousel-games__title:hover .carousel-games__link{
+    color: var(--color-secondary);
+}
+
+
+/*********************************************************************************************/
 /*ESTILOS CONTENIDO PRINCIPAL (main)*/
+/*********************************************************************************************/
 
 .layout__main{
     grid-area: main;
+    margin-right: var(--separacion-secciones);
 }
 
 
-/*ESTILOS MENU LATERAL (aside)*/
+/*Estilo para seccion de noticias*/
 
+.main__news{
+    width: 100%;    
+}
+
+.news__main-post{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    gap: 3rem;
+    padding-bottom: 2rem;
+    margin-bottom: 2rem;
+    border-bottom: 1px solid var(--color-bgMarquee);
+}
+
+/*Contenedor de la imagen del post*/
+.main-post__image{
+    position: relative;
+    overflow: hidden;
+    flex-basis: 50%;
+    height: 20rem;
+}
+
+/*Imagen del post*/
+.main-post__img{
+    width: 100%;
+    height: 100%;
+    transition: all 300ms ease;
+}
+
+.main-post__img:hover{
+    transform: scale(1.1);
+}
+
+/*Etiqueta de categoria en post de noticias*/
+/*Contenedor*/
+.main-post__container-category{
+    position: absolute;
+    left: 0;
+    bottom: 1rem;
+    padding: 0.5rem 1rem;
+    background-color: var(--color-secondary);
+    transition: all 300ms ease-in-out;
+}
+
+.main-post__container-category:hover{
+    background-color: var(--color-bgNavbar);
+}
+
+/*Texto de la etiqueta*/
+.main-post__category{
+    display: block;
+    font-size: 1.1rem;
+    font-weight: 400;
+    text-transform: uppercase;
+    color: var(--color-principal);
+}
+
+
+/*Contenedor de la informacion del post*/
+.main-post__info{
+    flex-basis: 50%;
+}
+
+/*Titulo del post*/
+.main-post__title{
+    font-size: 2rem;
+    text-transform: uppercase;
+    margin-bottom: 1rem;
+}
+
+.main-post__link-title{
+    color: var(--color-titles);
+    transition: all 300ms ease-in-out;
+}
+
+.main-post__title:hover .main-post__link-title{
+    color: var(--color-secondary);
+}
+
+/*Informacion meta (autor fecha)*/
+.main-post__meta{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-bottom: 1rem;
+}
+
+/*Texto de la descripcion del post*/
+.main-post__description{
+    font-size: 1.3rem;
+    color: var(--color-titles);
+    margin-bottom: 1rem;0
+}
+
+/*Footer del post (comentarios y views -- Boton leer mas)*/
+.main-post__footer-info{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+
+/*Lista de noticias*/
+.news__list{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 4rem;
+    margin-bottom: 6rem;
+}
+
+
+
+/*En combinacion con flex-wrap del elemento padre que reacomoda los elementos hijos para que no se junten demasiado,
+y dandoles tamaño un ancho podemos conseguir que la lista nos quede como queremos.
+Es cuestion de ir tocando para ajustarlo y tener en cuenta los espaciados entre elementos y en
+los propios elementos*/
+
+/*Elementos de la lista*/
+.news__post{
+    display: flex;
+    flex-basis: calc(50% - 2rem);
+    gap: 1rem;
+}
+
+
+/*Imagenes de los post*/
+/*contenedor*/
+.news__image{
+    overflow: hidden;
+    width: 7.5rem;
+    height: 7.5rem;
+}
+
+/*Imagen*/
+.news__img{
+    width: 100%;
+    height: 100%;
+    transition: all 300ms;
+}
+
+.news__image:hover .news__img{
+    transform: scale(1.1);
+}
+
+/*Contenedor de la informacion de los post*/
+.news__detail{
+    width: 75%;
+}
+
+/*Titulos de los post*/
+.news__title-post{
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+}
+
+.news__link-title{
+    color: var(--color-titles);
+    transition: all 300ms ease-in-out;
+}
+
+.news__link-title:hover{
+    color: var(--color-secondary);
+}
+
+/*Autor y fecha de los post*/
+.news__data{
+    display: flex;
+    flex-direction: row;
+    margin-bottom: 1rem;
+    gap: 1rem;
+}
+
+
+/*ESTILOS DE SECCION JUEGOS*/
+
+/*Contenedor seccion*/
+.main__games{
+    width: 100%;
+    margin-bottom: var(--separacion-secciones);
+}
+
+/*Contenedor de la lista*/
+.games__container{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 3rem;
+}
+
+/*Contenedor de cada elemento*/
+.games__game{
+    position: relative;
+    flex-basis: calc(50% - 1.5rem);
+}
+
+/*Contenedor de la imagen de cada elemento*/
+.game__container-image{
+    width: 100%;
+    overflow: hidden;
+}
+
+/*Imagen de cada elemento*/
+.game__img{
+    width: 100%;
+    transition: all 300ms;
+}
+
+.game__img:hover{
+    transform: scale(1.1);
+}
+
+/*Posicionado de nota*/
+.game__rating{
+    position: absolute;
+    top: 0.5rem;
+    right: 0.5rem;
+    width: 4rem;
+    height: 4rem;
+    z-index: 9;
+}
+
+.game__details{
+    width: 100%;
+    min-height: 6rem;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    padding: 0.5rem 1rem;
+    padding-right: 6rem;
+    background-color: rgba(0, 0, 0, 0.2);
+}
+
+.game__title{
+    font-size: 2rem;
+    text-transform: uppercase;
+}
+
+.game__link-title{
+    color: var(--color-principal);
+    transition: all 300ms ease;
+}
+
+.game__title:hover .game__link-title{
+    text-shadow:0 0 5px var(--color-titles);
+}
+
+
+/*********************************************************************************************/
+/* ESTILOS ULTIMOS ARTICULOS */
+/*********************************************************************************************/
+
+.main__posts{
+    width: 100%;
+    margin-bottom: var(--separacion-secciones);
+}
+
+
+/*Cabeceras*/
+.posts__list-header{
+    display: flex;
+    flex-direction: row;
+    gap: 0.5rem;
+}
+
+.list-header--small{
+    font-size: 1.1rem;
+    padding: 0.5rem;
+    white-space: nowrap;
+    font-weight: 400;
+    color: var(--color-principal);
+    text-transform: uppercase;
+}
+
+
+/*Ultimos articulos*/
+/*Reutilizamos prácticamente todos los estilos generales y de highlights. Ver esa seccion*/
+
+.posts__container{
+    flex-wrap: wrap;
+}
+
+.posts__post{
+    flex-basis: calc(50% - 2rem);
+}
+
+/*********************************************************************************************/
+/*ESTILOS MENU LATERAL (aside)*/
+/*********************************************************************************************/
 .layout__aside{
     grid-area: aside;
 }
