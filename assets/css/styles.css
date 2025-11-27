@@ -15,6 +15,12 @@
 
     --color-bgAside: #F5F5F5;
     --separacion-secciones: 3rem;
+
+    --color-twitter: #2FC2EF;
+    --color-facebook: #4C66A5;
+    --color-youtube: #CB171E;
+    --color-instagram: #EA4C89;
+    --color-linkedin: #F3A62B;
 }
 
 /*********************************************************************************************/
@@ -1430,8 +1436,126 @@ los propios elementos*/
 /*Seccion de Redes sociales*/
 /*********************************************************************************************/
 
+/*Contenedor de seccion*/
 .aside__social{
     width: 100%;
     margin-top: 3rem;
     margin-bottom: 3rem;
+}
+
+/*Lista de elementos*/
+.social__list{
+    width: 100%;
+}
+
+/*Contenedor de cada elemento*/
+.social__item{
+    width: 100%;
+    margin-bottom: 1rem;
+    padding: 1rem 2rem;
+    background-color: var(--color-twitter);
+    color: var(--color-principal);
+    
+    transition: all 300ms ease;
+}
+
+.social__item:hover{
+    padding-left: 3rem;
+}
+
+/*contenedor de icono + texto*/
+.social__link{
+    display: flex;
+    flex-direction: row;
+    color: var(--color-principal);
+}
+
+/*contenedor del icono de la Red social*/
+.social__icon{
+    margin-right: 1rem;
+    margin-top: 0.3rem;
+    flex-basis: 20%;
+}
+
+/*Icono*/
+.social__icon .fa-brands{
+    font-size: 3.5rem;
+}
+
+/*Numero de seguidores*/
+.social__number{
+    font-size: 1.8rem;
+    line-height: 1;
+}
+
+/*Palabra seguidores o suscriptores*/
+.social__word{
+    line-height: 1;
+    font-size: 1.3rem;
+    opacity: 0.75;
+}
+
+/*Cambiamos el color a cada elemento como queramos segun la Red*/
+.social__item--blue{
+    background-color:var(--color-twitter)
+}
+
+.social__item--dark-blue{
+    background-color: var(--color-facebook);
+}
+
+.social__item--red{
+    background-color: var(--color-youtube);
+}
+
+.social__item--pink{
+    background-color: var(--color-instagram);
+}
+
+
+.social__item--yellow{
+    background-color: var(--color-linkedin);
+}
+
+
+/*********************************************************************************************/
+/*Seccion últimos tweets*/
+/*********************************************************************************************/
+
+/*Contenedor de la seccion*/
+.aside__tweets{
+    margin-bottom: var(--separacion-secciones);
+    padding: 1.2rem;
+    background-color: var(--color-twitter);
+
+    font-size: 1.3rem;
+    color: var(--color-principal);
+}
+
+/*Encabezado*/
+.tweets__header{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin-top: 1rem;
+    margin-bottom: 1.5rem;
+}
+
+/*Icono del encabezado*/
+.tweets__header .fa-brands{
+    margin-right: 1rem;
+}
+
+/*Texto del encabezado*/
+.tweets__title{
+    font-size: 1.3rem;
+    font-weight: 400;
+    text-transform: uppercase;
+    display: inline-block;
+}
+
+/*Contenido del tweet*/
+.tweets__content{
+    margin-bottom: 2rem;
+    hyphens: auto; /*Corta el texto con guiones en caso de tener que recortar el contenido del texto*/
 }
