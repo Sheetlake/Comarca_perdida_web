@@ -906,6 +906,20 @@ comporte como linea para que se posicione al lado*/
     margin-bottom: 1.5rem;
 }
 
+/*Imagen de cada elemento de la lista*/
+.video__image{
+    overflow: hidden;
+}
+
+.video__img{
+    transition: all 300ms;
+}
+
+.video__img:hover{
+    transform: scale(1.1);
+}
+
+/*Informacion de cada elemento de la lista*/
 .video__detail{
     flex-basis: 75%;
 }
