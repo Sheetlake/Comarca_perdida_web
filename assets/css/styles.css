@@ -740,7 +740,8 @@ body{
 }
 
 /*Autor*/
-.highlights__author{
+.highlights__author,
+.main-video__author{
     font-size: 1.1rem;
     font-weight: 500;
     text-transform: uppercase;
@@ -748,7 +749,8 @@ body{
 }
 
 /*Fecha*/
-.highlights__date{
+.highlights__date,
+.main-video__date{
     font-size: 1.1rem;
     font-weight: 400;
     text-transform: uppercase;
@@ -768,7 +770,7 @@ body{
 }
 
 
-/*footer de los posts (views y comments*/
+/*footer de los posts (views y comments. Aprovechamos para reutilizarlos para el video principal*/
 
 .footer-post__container{
     gap: 1rem;
@@ -782,8 +784,13 @@ body{
     margin-bottom: 1rem;    
 }
 
+
+/*****Marcador para views comments*****/
+
 .footer-post__views, 
-.footer-post__comments{
+.footer-post__comments,
+.main-video__views,
+.main-video__comments{
     display: inline-block;
     font-size: 1.1rem;
     font-weight: 400;
@@ -791,7 +798,9 @@ body{
 }
 
 .footer-post__views fa-solid,
-.footer-post__comments fa-solid{
+.footer-post__comments fa-solid,
+.main-video__views fa-solid,
+.main-video__comments fa-solid{
     margin-right: 0.2rem;
     font-size: 1.2rem;
 }
@@ -859,6 +868,30 @@ comporte como linea para que se posicione al lado*/
     font-size: 2.4rem;
     margin-bottom: 1rem;
 }
+
+
+/*Informacion video principal*/
+
+.main-video__info{
+    display: flex;
+    justify-content: space-between;
+    padding-bottom: 2rem;
+    border-bottom: 1px solid var(--color-bgMarquee);
+}
+
+.main-video__info-container{
+    display: flex;
+    flex-direction: row;
+    gap: 1rem;
+}
+
+
+.main-video__info-container a{
+    display: inline;
+}
+
+
+/*Para los estilos de views y comments ir al *****Marcador para views comments*****/
 
 
 /*ESTILOS CARRUSEL (carousel)*/
