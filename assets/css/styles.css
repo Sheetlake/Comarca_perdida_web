@@ -62,7 +62,6 @@ body{
 .subheader__title,
 .news__title,
 .list-header__title,
-.list-header__link-title,
 .last-reviews__link-title{
     display: inline;
     padding: 0.5rem;
@@ -751,7 +750,8 @@ body{
 .video__author,
 .main-post__container-author,
 .news__author,
-.post__author{
+.post__author,
+.recent__author{
     font-size: 1.1rem;
     font-weight: 500;
     text-transform: uppercase;
@@ -786,20 +786,22 @@ body{
 
 /*footer de los posts (views y comments. Aprovechamos para reutilizarlos para el video principal*/
 
-.footer-post__container,
-.footer-info__container,
-.post__footer-post{
-    gap: 1rem;
-}
-
 .highlights__footer-post, 
 .footer-post__container,
 .footer-info__container,
-.post__footer-post{
+.post__footer-post,
+.recent__meta-info{
     display: flex;
     flex-direction: row;
     justify-content: space-between;
     margin-bottom: 1rem;    
+}
+
+.footer-post__container,
+.footer-info__container,
+.post__footer-post,
+.recent__meta-info{
+    gap: 1rem;
 }
 
 .footer-post__views, 
@@ -807,7 +809,9 @@ body{
 .main-video__views,
 .main-video__comments,
 .main-post__views,
-.main-post__comments
+.main-post__comments,
+.recent__views,
+.recent__comments
 {
     display: inline-block;
     font-size: 1.1rem;
@@ -820,7 +824,9 @@ body{
 .main-video__views .fa-solid,
 .main-video__comments .fa-solid,
 .main-post__views .fa-solid,
-.main-post__comments .fa-solid
+.main-post__comments .fa-solid,
+.recent__views .fa-solid,
+.recent__comments, .fa-solid
 {
     margin-right: 0.2rem;
     font-size: 1.2rem;
@@ -1326,7 +1332,8 @@ los propios elementos*/
 
 
 /*Cabeceras*/
-.posts__list-header{
+.posts__list-header,
+.recent__list-header{
     display: flex;
     flex-direction: row;
     gap: 0.5rem;
@@ -1433,7 +1440,7 @@ los propios elementos*/
 }
 
 /*********************************************************************************************/
-/*Seccion de Redes sociales*/
+/*SECCION DE REDES SOCIALES (aside)*/
 /*********************************************************************************************/
 
 /*Contenedor de seccion*/
@@ -1519,7 +1526,7 @@ los propios elementos*/
 
 
 /*********************************************************************************************/
-/*Seccion últimos tweets*/
+/*SECCION DE ULTIMOS TWEETS (aside)*/
 /*********************************************************************************************/
 
 /*Contenedor de la seccion*/
@@ -1559,3 +1566,202 @@ los propios elementos*/
     margin-bottom: 2rem;
     hyphens: auto; /*Corta el texto con guiones en caso de tener que recortar el contenido del texto*/
 }
+
+
+/*********************************************************************************************/
+/*ESTILOS POST RECIENTES (aside) */
+/*********************************************************************************************/
+.aside__recent{
+    margin-bottom: var(--separacion-secciones);    
+}
+
+/*Cabecera de la seccion*/
+/*Se comparten muchos estilos con posts__list-header pero hay que hacer ajustes*/
+.aside__recent .list-header__title{
+    display: inline-block;
+    font-size: 1.3rem;
+    padding: 0.3rem 0.5rem;
+}
+
+/*Elementos no resaltados*/
+.aside__recent .list-header--small{
+    background:none;
+    font-size: 1.1rem;
+    padding: 0.5rem;
+}
+
+/*Pequeño ajuste para que los elementos queden mejor centrados*/
+.recent__subheader{
+    height: 3.65rem;
+}
+
+
+/*Contenedor de la lista de posts recientes*/
+.recent__list-posts{
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+
+/*Contenedor del post individual*/
+.recent__item{
+    display: flex;
+    flex-direction: row;
+    gap: 1rem;
+}
+
+/*Contenedor de la imagen*/
+.recent__container-image{
+    width: 7rem;
+    height: 7rem;
+    overflow: hidden;
+}
+
+/*Imagen del post*/
+.recent__img{
+    width: 100%;
+    transition: all 300ms ease;
+}
+
+.recent__img:hover{
+    transform: scale(1.1);
+}
+
+/*Contenedor de la informacion*/
+.recent__detail{
+    width: 100%;
+}
+
+/*Titulo del post reciente*/
+.recent__title{
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+}
+
+.recent__link-title{
+    color: var(--color-titles);
+    transition: all 300ms ease;
+}
+
+.recent__link-title:hover{
+    color: var(--color-secondary);
+}
+
+/*Contenedor de la info meta (autor, views, comments*/
+.recent__container-info{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+/*Los elementos autor, views y comments los reutilizamos
+ añadiendo la clase a los estilos comunes al principio del CSS*/
+
+
+/*********************************************************************************************/
+ /*ESTILOS DE ULTIMOS ANALISIS*/
+ /*********************************************************************************************/
+
+ .aside__last-reviews{
+    width: 100%;
+    margin-bottom: var(--separacion-secciones);
+ }
+
+ /*Encabezado*/
+.last-reviews__list-header{
+    display: flex;
+    gap: 0.5rem;
+}
+
+/*Corregimos los estilos compartidos de los subheader*/
+.aside__last-reviews .last-reviews__subheader{
+    padding: 0.17rem 0.5rem;
+}
+
+/*Añadimos el modificador al inactivo*/
+.aside__last-reviews .last-reviews__link-title--small{
+    background:none;
+    font-size: 1.1rem;
+    padding: 0.5rem;
+}
+
+/*Lista de elementos*/
+/*Contenedor de la lista*/
+.last-reviews__list-reviews{
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+
+/*Contenedor del elemento*/
+.last-reviews__item{
+    width: 100%;
+}
+
+/*Contenedor de titulo y nota*/
+.list-reviews__container-title{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+
+/*Contenedor del texto del titulo*/
+.list-reviews__title{
+    font-size: 1.5rem;
+    text-align: left;
+    text-transform: capitalize;
+}
+
+.list-reviews__title-link{
+    color: var(--color-titles);
+    transition: all 300ms ease-in-out;
+}
+
+.list-reviews__title-link:hover{
+    color: var(--color-secondary);
+}
+
+/*Nota*/
+.list-reviews__mark{
+    font-size: 1.6rem;
+    font-weight: 700;
+    color: var(--color-titles);
+}
+
+
+/*Barras de progreso*/
+/*Contenedor de la barra*/
+.list-reviews__progressbar{
+    width: 100%;
+    height: 1rem;
+    background-color: var(--color-bgNavbar);
+    margin-top: 0.2rem;
+    border-radius: 0.3rem;
+}
+
+/*Barra de progreso*/
+.list-reviews__bar{
+    height: 100%;
+    border-radius: 0.3rem;
+    background-color: var(--color-secondary);
+}
+
+/*En funcion a la nota se establece un porcentaje para el width*/
+.list-reviews__bar--bar1{
+    width: 75%;
+}
+.list-reviews__bar--bar2{
+    width: 65%;
+}
+.list-reviews__bar--bar3{
+    width: 81%;
+}
+.list-reviews__bar--bar4{
+    width: 55%;
+}
+.list-reviews__bar--bar5{
+    width: 90%;
+}
+
+
+/**/
