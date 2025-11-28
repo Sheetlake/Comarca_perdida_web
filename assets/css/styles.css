@@ -21,6 +21,9 @@
     --color-youtube: #CB171E;
     --color-instagram: #EA4C89;
     --color-linkedin: #F3A62B;
+
+    --color-footer: #222222;
+    --color-footer-down: #111111;
 }
 
 /*********************************************************************************************/
@@ -1785,7 +1788,158 @@ los propios elementos*/
     width: 90%;
 }
 
+
 /*********************************************************************************************/
-/*HASTA AQUI EL ASIDE*/
+/*ESTILOS DEL FOOTER*/
 /*********************************************************************************************/
+
+footer{
+    background-color: var(--color-footer);
+    color: var(--color-principal);
+}
+
+/*Contenedor del footer*/
+.footer__container{
+    width: 55%;
+    min-width: 100rem;
+    margin: 0 auto;
+    padding: 3rem 0;
+    display: flex;
+    flex-direction: row;
+    gap: 3rem;
+}
+
+/*Estructura o reparticion de los 3 contenedores del footer*/
+.footer__left-container{
+    flex-basis: 33%;
+}
+
+.footer__center-container{
+    flex-basis: 33%;
+}
+
+.footer__right-container{
+    flex-basis: 33%;
+}
+
+/*Titulos del footer*/
+.about__title,
+.tags__title,
+.footer__title{
+    margin-bottom: 2rem;
+    color: var(--color-secondary);
+    font-size: 1.6rem;
+    font-weight: 700;
+    text-transform: uppercase;
+}
+
+
+/*********************************************************************************************/
+/*ESTILOS DE ABOUT (Left container)*/
+/*********************************************************************************************/
+
+.footer__about{
+    width: 100%;
+    margin-bottom: var(--separacion-secciones);
+}
+
+.about__description{
+    font-size: 1.3rem;
+    color: var(--color-principal);   
+}
+
+
+/*********************************************************************************************/
+/*ESTILOS ETIQUETAS FOOTER (Left container)*/
+/*********************************************************************************************/
+/*Contenedor de etiquetas*/
+.tags__container{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 1rem;
+}
+
+/*Elemento etiqueta*/
+.tags__tag{
+    display: inline-block;
+    padding: 0.5rem 1rem;
+    font-size: 1.3rem;
+    color: var(--color-principal);
+    background-color: var(--color-secondary);
+    border: 2px solid var(--color-secondary);
+    border-radius: 0.3rem;
+    transition: all 300ms ease;
+}
+
+.tags__tag:hover{
+    background-color: transparent;
+}
+
+
+/*********************************************************************************************/
+/*ESTILOS POST POPULARES (Center container)*/
+/*********************************************************************************************/
+
+/*Contenedor de la lista*/
+.footer__list-popular{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+
+/*Contenedor de cada elemento de la lista*/
+.list-popular__item{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    gap: 1rem;
+}
+
+/*Contenedor de la imagen*/
+.list-popular__container-image{
+    width: 7rem;
+    height: 7rem;
+    overflow: hidden;
+}
+
+/*Imagen*/
+.list-popular__img{
+    width: 100%;
+    transition: all 300ms ease;
+}
+
+.list-popular__img:hover{
+    transform: scale(1.1);
+}
+
+.list-popular__detail{
+    flex-basis: 75%;
+}
+
+.list-popular__title{
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+}
+
+.list-popular__container-info{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.list-popular__author{
+    font-size: 1.1rem;
+    font-weight: 500;
+    text-transform: uppercase;
+    color: var(--color-secondary);
+}
+
+.list-popular__meta-info{
+    display: flex;
+    flex-direction: row;
+    gap: 2rem;
+}
 
