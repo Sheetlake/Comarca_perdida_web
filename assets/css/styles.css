@@ -1360,6 +1360,28 @@ los propios elementos*/
     flex-basis: calc(50% - 2rem);
 }
 
+
+/*********************************************************************************************/
+/*ESTILOS BOTON LEER MAS (antes del footer)*/
+/*********************************************************************************************/
+
+.posts__read-more{
+    width: 100%;
+    font-size: 1.6rem;
+    font-weight: 400;
+    text-transform: uppercase;
+    padding: 0.4rem;
+    text-align: center;
+    border: 1px solid var(--color-bgNavbar);
+    transition: all 300ms ease-in-out;
+}
+
+.posts__read-more:hover{
+    background-color: var(--color-secondary);
+    color: var(--color-principal);
+    border-color: var(--color-secondary);
+}
+
 /*********************************************************************************************/
 /*ESTILOS MENU LATERAL (aside)*/
 /*********************************************************************************************/
@@ -1763,5 +1785,7 @@ los propios elementos*/
     width: 90%;
 }
 
+/*********************************************************************************************/
+/*HASTA AQUI EL ASIDE*/
+/*********************************************************************************************/
 
-/**/
