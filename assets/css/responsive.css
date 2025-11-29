@@ -173,4 +173,89 @@
     /*ESTILOS MEJORES MOMENTOS (highlights responsive)*/
     /**********************************************************************************************/
 
+    .highlights__posts{
+        flex-wrap: wrap;
+    }
+
+    .highlights__post{
+        width: calc(50% - 1.5rem);
+    }
+
+    /**********************************************************************************************/
+    /*ESTILOS VIDEOS (responsive)*/
+    /**********************************************************************************************/
+    
+    .videos__container{
+        flex-direction: column;
+        gap: 0;
+    }
+
+    .videos__list{
+        width: 100%;
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: row;
+        gap: 2rem;
+    }
+
+    .videos__video{
+        width: calc(50% - 1rem);
+    }
+
+    
+    /**********************************************************************************************/
+    /*ESTILOS CARRUSEL JUEGOS (responsive)*/
+    /**********************************************************************************************/
+
+    .carousel-games__item--hidden{
+        display: none;
+    }
+
+    .carousel-games__item{
+        width: 100%;
+    }
+
+    /**********************************************************************************************/
+    /*Correccion del layout main*/
+    /**********************************************************************************************/
+    .layout__main{
+        margin-right: 0;
+    }
+
+    /**********************************************************************************************/
+    /*ESTILOS ASIDE (responsive)*/
+    /**********************************************************************************************/
+
+
+    .layout__aside{
+        margin-bottom: var(--separacion-secciones);
+    }
+
+    /**********************************************************************************************/
+    /*ESTILOS FOOTER (responsive)*/
+    /**********************************************************************************************/
+
+    .footer__container{
+        width: 70%;
+        min-width: 70rem;
+        flex-direction: column;
+    }
+
+    .footer__left-container,
+    .footer__center-container,
+    .footer__right-container{
+        width: 100%;
+    }
+
+
+    .footer__slider{
+        width: auto;
+        height: auto;
+    }
+
+    .footer__text{
+        text-align: center;
+        margin: 0 auto;
+    }
+    
 }
