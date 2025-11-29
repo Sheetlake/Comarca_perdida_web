@@ -36,7 +36,7 @@ document.addEventListener("DOMContentLoaded", () => {
       if (!pause) {
         i += speed;
 
-        // evitamos salto brusco usando modulo (mantiene continuidad)
+        // Aqui calculamos cuando se resetea la posicion
         if (i >= width){
             i -= width;
         }
