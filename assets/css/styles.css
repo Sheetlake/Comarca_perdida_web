@@ -250,7 +250,8 @@ body{
 
 /*Boton Lupa de la Navbar*/
 
-.navbar__btn-search{
+.navbar__btn-search,
+.navbar__mobile-btn{
     display: flex;
     align-items: center;
     height: 5rem;
@@ -258,7 +259,8 @@ body{
     background-color: var(--color-secondary);
 }
 
-.navbar__btn-search .fa-solid{
+.navbar__btn-search .fa-solid,
+.navbar__mobile-btn .fa-solid{
     cursor: pointer;
     color: var(--color-principal);
     font-size: 2.5rem;
@@ -652,7 +654,7 @@ body{
 /*Contenedor de posts*/
 .highlights__posts,
 .posts__container{
-    width: 100;
+    width: 100%;
 
     display: flex;
     flex-direction: row;
