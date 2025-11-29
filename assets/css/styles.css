@@ -505,6 +505,12 @@ body{
     overflow: hidden;
 }
 
+.marquee__track{
+  display : flex;
+  flex-wrap : nowrap;
+  align-items: center;
+}
+
 .marquee_list{
     display: flex;
     flex-direction: row;
