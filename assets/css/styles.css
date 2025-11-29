@@ -232,16 +232,14 @@ body{
 
 /*Input de texto de para busqueda en la navbar*/
 .search__input{
-    width: 20rem;
+    width: 0rem;
     height: 5rem;
     font-size: 1.5rem;
     background-color: var(--color-secondary);
     color: var(--color-principal);
     outline: none;
     border: none;
-    transition: all 200ms ease-out;
-    
-    display: none; /*Queremos que esté oculto hasta que se pulse en la lupa*/
+    transition: all 200ms ease-out;    
 }
 
 .search__input::placeholder{
@@ -1793,7 +1791,7 @@ los propios elementos*/
 /*ESTILOS DEL FOOTER*/
 /*********************************************************************************************/
 
-footer{
+.layout__footer{
     background-color: var(--color-footer);
     color: var(--color-principal);
 }
