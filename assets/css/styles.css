@@ -1915,21 +1915,25 @@ footer{
     transform: scale(1.1);
 }
 
+/*Contenedor el resto del post*/
 .list-popular__detail{
     flex-basis: 75%;
 }
 
+/*Titulo del post*/
 .list-popular__title{
     font-size: 1.5rem;
     margin-bottom: 1rem;
 }
 
+/*Contenedor de autor views y comments*/
 .list-popular__container-info{
     display: flex;
     flex-direction: row;
     justify-content: space-between;
 }
 
+/*Autor*/
 .list-popular__author{
     font-size: 1.1rem;
     font-weight: 500;
@@ -1937,9 +1941,98 @@ footer{
     color: var(--color-secondary);
 }
 
+/*Contenedor de views y comments*/
 .list-popular__meta-info{
     display: flex;
     flex-direction: row;
     gap: 2rem;
 }
 
+/*Estilos de views y comments*/
+.list-popular__views,
+.list-popular__comments{
+    font-size: 1.1rem;
+    font-weight: 400;
+    text-transform: uppercase;
+    color: var(--color-textMarquee);
+    margin-right: 1.2rem;
+}
+
+
+/*********************************************************************************************/
+/*ESTILOS DE ÚLTIMO POST (Right container)*/
+/*********************************************************************************************/
+
+/*Contenedor del post*/
+.footer__slider{
+    position: relative;
+    width: 33rem;
+    height: 22rem;
+    overflow: hidden;
+}
+
+/*Imagen del post*/
+.f-slider__img{
+    width: 100%;
+    height: 100%;
+    transition: all 300ms ease;
+}
+
+.f-slider__img:hover{
+    transform: scale(1.1);
+}
+
+/*Contenedor de la informacion*/
+.f-slider__info{
+    width: 100%;
+    position: absolute;
+    top: 40%;
+    text-align: center;
+    color: var(--color-principal);
+}
+
+/*Categoría del post*/
+.f-slider__category{
+    font-size: 1.1rem;
+    font-weight: 400;
+    margin: 0.5rem 0;
+    text-transform: uppercase;
+}
+
+/*Linea separadora*/
+.f-slider__separator{
+    display: block;
+    width: 5rem;
+    height: 0.2rem;
+    margin: 0.5rem auto;
+    background-color: var(--color-secondary);
+}
+
+/*Titulo del post*/
+.f-slider__link{
+    font-size: 1.6rem;
+    line-height: 1.4rem;
+    margin-top: 1rem;
+    text-transform: uppercase;
+    text-shadow: 1px 1px 3px var(--color-titles);
+}
+
+
+/*********************************************************************************************/
+/*FOOTER FINAL (footer abajo)*/ 
+/*********************************************************************************************/
+
+.footer__description{
+    width: 100%;
+    padding: 2rem;
+    background-color: var(--color-footer-down);
+    color: var(--color-principal);
+}
+
+/*Contenedor del texto*/
+.footer__text{
+    width: 50%;
+    margin: 0 auto;
+    font-size: 1.1rem;
+    white-space: nowrap;
+}
