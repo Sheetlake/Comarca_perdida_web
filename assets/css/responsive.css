@@ -312,3 +312,176 @@
     }
 
 }
+
+
+@media (max-width:630px){
+
+    /**********************************************************************************************/
+    /*ESTILOS LAYOUT (responsive 2)*/
+    /**********************************************************************************************/
+
+    .layout{
+        width: 35%;
+        min-width: 35rem;
+        margin: 0 auto;
+    }
+
+
+    /**********************************************************************************************/
+    /*ESTILOS SLIDER (responsive3)*/
+    /**********************************************************************************************/
+
+    .layout__slider{
+        grid-area: slider;
+
+        width: 100%;
+        margin-bottom: var(--separacion-secciones);
+
+        display: grid;
+        grid-template-areas:"slider1 slider1 slider1 slider1"
+                            "slider2 slider2 slider2 slider2"
+                            "slider3 slider3 slider3 slider3"
+                            "slider4 slider4 slider4 slider4"
+        ;
+        column-gap: 0;
+        grid-template: 100%;
+    }
+
+    
+    .slider__container--slider1{
+        width: 100%;
+        height: auto;
+    }
+    .slider__container--slider2{
+        width: 100%;
+        height: auto;
+    }
+    .slider__container--slider3{
+        width: 100%;
+        height: auto;
+    }
+    .slider__container--slider4{
+        width: 100%;
+        height: auto;
+    }
+    
+    .slider__container--slider5{
+        display: none;
+    }
+
+    /**********************************************************************************************/
+    /*ESTILOS MEJORES MOMENTOS (highlights responsive3)*/
+    /**********************************************************************************************/
+
+    .highlights__posts{
+        flex-direction: row;
+    }
+
+    .highlights__post{
+        width: 100%;
+    }
+
+
+    /**********************************************************************************************/
+    /*ESTILOS VIDEOS (responsive3)*/
+    /**********************************************************************************************/
+
+    .main-video__yt-video{
+        height: 20rem;
+    }
+
+    .videos__list{
+        flex-direction: column;
+    }
+
+    .videos__video{
+        width: 100%;
+    }
+
+
+    /**********************************************************************************************/
+    /*ESTILOS CARRUSEL JUEGOS (responsive3)*/
+    /**********************************************************************************************/
+
+    .carousel-games__item--hidden-smaller{
+        display: none;
+    }
+
+    .carousel-games__item{
+        width: 100%;
+    }
+
+
+    /**********************************************************************************************/
+    /*ESTILOS NOTICIAS (responsive3)*/
+    /**********************************************************************************************/
+
+    .news__main-post{
+        flex-direction: column;
+    }
+
+    .news__list{
+        flex-direction: column;
+    }
+
+
+    /**********************************************************************************************/
+    /*ESTILOS JUEGOS (responsive3)*/
+    /**********************************************************************************************/
+
+    .games__container{
+        flex-direction: column;
+    }
+
+    .games__game{
+        width: 100%;
+    }
+
+
+    /**********************************************************************************************/
+    /*ESTILOS ULTIMOS ARTICULOS (responsive3)*/
+    /**********************************************************************************************/
+
+    .posts__container{
+        flex-direction: column;
+    }
+
+    .posts__post{
+        flex-basis: 100%;
+    }
+
+    .post__img{
+        width: 100%;
+    }
+
+
+    /**********************************************************************************************/
+    /*ESTILOS FOOTER (responsive3)*/
+    /**********************************************************************************************/
+
+    .footer__container{
+        width: 30%;
+        min-width: 30rem;
+    }
+
+    .footer__text{
+        width: 100%;
+    }
+
+
+}
+
+
+@media(max-width:350px){
+    
+    .layout{
+        width: 100%;
+        min-width: auto;
+        margin: 0;
+    }
+    .footer__container{
+        width: 100%;
+        min-width: auto;
+        margin: 0;
+    }
+}
