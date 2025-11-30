@@ -583,6 +583,7 @@ body{
 .slider__container{
     overflow: hidden;
     position: relative;
+    aspect-ratio: 16/9;
     width: 100%;
     height: 100%;
 }
@@ -958,17 +959,21 @@ comporte como linea para que se posicione al lado*/
     transform: scale(1.1);
 }
 
-/*Informacion de cada elemento de la lista*/
+/*Contenedor de la informacion de cada elemento de la lista*/
 .video__detail{
     flex-basis: 75%;
+    padding: 1rem;
+    cursor: pointer;
 }
 
+/*Contenedor del titulo*/
 .video__title{
     font-size: 1.5rem;
     font-weight: 700;
     margin-bottom: 0.5rem;
 }
 
+/*Texto del titulo*/
 .video__link{
     color: var(--color-titles);
     transition: all 300ms ease;
@@ -978,10 +983,32 @@ comporte como linea para que se posicione al lado*/
     color: var(--color-secondary);
 }
 
+/*Contenedor del autor y la fecha del video*/
 .video__info{
     display: flex;
     gap: 1rem;
 }
+
+/*Estilos para los videos seleccionados en la lista*/
+.videos__video.active-video .video__detail {
+  background-color: var(--color-bgNavbar);
+}
+
+.videos__video.active-video .video__link{
+    color: var(--color-principal);
+}
+
+.videos__video.active-video .video__author {
+  color: var(--color-principal);
+  opacity: 0.8;
+}
+
+.videos__video.active-video .video__date{
+    color: var(--color-principal);
+    opacity: 0.5;
+}
+
+
 
 /*********************************************************************************************/
 /*ESTILOS CARRUSEL (carousel)*/

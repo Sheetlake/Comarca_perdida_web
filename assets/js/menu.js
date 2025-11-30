@@ -46,6 +46,14 @@ document.addEventListener("DOMContentLoaded", (event) => {
         submenu(dropDown1_btn, dropDown1_submenu, "dropdown1");
         submenu(dropDown2_btn, dropDown2_submenu, "dropdown2");
 
-        //
+        //Arreglo para el redimensionado 
+
+        window.addEventListener("resize", () => {
+            let win = parseFloat(document.body.clientWidth);
+            if(win>1024){
+                mobile_menu.style.display = "none";
+                mobile_menu.classList.remove("menu__open");
+            }
+        })
 
 });
