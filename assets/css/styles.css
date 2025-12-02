@@ -1429,6 +1429,7 @@ los propios elementos*/
     background-color: var(--color-bgAside);
     padding: 1.5rem;
     height: fit-content;
+    margin-bottom: var(--separacion-secciones);
 }
 
 /*********************************************************************************************/

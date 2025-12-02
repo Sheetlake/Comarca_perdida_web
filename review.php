@@ -36,7 +36,7 @@
     <!-- Contenido de la noticia -->
     <main class="layout__main">
 
-      <!-- Aqui va el contenido de la noticia -->
+
 
 
 
