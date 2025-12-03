@@ -42,7 +42,7 @@
                   <li class="list-popular__item">
                       <div class="list-popular__container-image">
                           <a href="#" class="list-popular__link-image">
-                              <img src="assets/img/popular-1.jpg" class="list-popular__img" />
+                              <img src="<?= BASE_URL ?>assets/img/popular-1.jpg" class="list-popular__img" />
                           </a>
                       </div>
                       <div class="list-popular__detail">
@@ -68,7 +68,7 @@
                   <li class="list-popular__item">
                       <div class="list-popular__container-image">
                           <a href="#" class="list-popular__link-image">
-                              <img src="assets/img/popular-2.jpg" class="list-popular__img" />
+                              <img src="<?= BASE_URL ?>assets/img/popular-2.jpg" class="list-popular__img" />
                           </a>
                       </div>
                       <div class="list-popular__detail">
@@ -94,7 +94,7 @@
                   <li class="list-popular__item">
                       <div class="list-popular__container-image">
                           <a href="#" class="list-popular__link-image">
-                              <img src="assets/img/popular-3.jpg" class="list-popular__img" />
+                              <img src="<?= BASE_URL ?>assets/img/popular-3.jpg" class="list-popular__img" />
                           </a>
                       </div>
                       <div class="list-popular__detail">
@@ -120,7 +120,7 @@
                   <li class="list-popular__item">
                       <div class="list-popular__container-image">
                           <a href="#" class="list-popular__link-image">
-                              <img src="assets/img/popular-4.jpg" class="list-popular__img" />
+                              <img src="<?= BASE_URL ?>assets/img/popular-4.jpg" class="list-popular__img" />
                           </a>
                       </div>
                       <div class="list-popular__detail">
@@ -147,7 +147,7 @@
               <h3 class="footer__title">Último post</h3>
 
               <div class="footer__slider">
-                  <img src="assets/img/slider-footer.jpg" class="f-slider__img" />
+                  <img src="<?= BASE_URL ?>assets/img/slider-footer.jpg" class="f-slider__img" />
 
                   <div class="f-slider__info">
                       <h4 class="f-slider__category">Juegos</h4>

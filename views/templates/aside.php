@@ -124,7 +124,7 @@
                     <li class="recent__item">
                         <div class="recent__container-image">
                             <a href="#" class="recent__link-image">
-                                <img src="assets/img/recent-1.jpg" class="recent__img" />
+                                <img src="<?= BASE_URL ?>assets/img/recent-1.jpg" class="recent__img" />
                             </a>
                         </div>
                         <div class="recent__detail">
@@ -149,7 +149,7 @@
                     <li class="recent__item">
                         <div class="recent__container-image">
                             <a href="#" class="recent__link-image">
-                                <img src="assets/img/recent-2.jpg" class="recent__img" />
+                                <img src="<?= BASE_URL ?>assets/img/recent-2.jpg" class="recent__img" />
                             </a>
                         </div>
                         <div class="recent__detail">
@@ -174,7 +174,7 @@
                     <li class="recent__item">
                         <div class="recent__container-image">
                             <a href="#" class="recent__link-image">
-                                <img src="assets/img/recent-3.jpg" class="recent__img" />
+                                <img src="<?= BASE_URL ?>assets/img/recent-3.jpg" class="recent__img" />
                             </a>
                         </div>
                         <div class="recent__detail">
@@ -199,7 +199,7 @@
                     <li class="recent__item">
                         <div class="recent__container-image">
                             <a href="#" class="recent__link-image">
-                                <img src="assets/img/recent-4.jpg" class="recent__img" />
+                                <img src="<?= BASE_URL ?>assets/img/recent-4.jpg" class="recent__img" />
                             </a>
                         </div>
                         <div class="recent__detail">
@@ -224,7 +224,7 @@
                     <li class="recent__item">
                         <div class="recent__container-image">
                             <a href="#" class="recent__link-image">
-                                <img src="assets/img/recent-5.jpg" class="recent__img" />
+                                <img src="<?= BASE_URL ?>assets/img/recent-5.jpg" class="recent__img" />
                             </a>
                         </div>
                         <div class="recent__detail">

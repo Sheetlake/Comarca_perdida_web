@@ -102,7 +102,7 @@
                                 <li class="carousel__item">
                                     <!-- Imagen -->
                                     <div class="carousel__container-image">
-                                        <img src="assets/img/game-1.jpg" class="carousel__image" alt="imagen submenu" />
+                                        <img src="<?= BASE_URL ?>assets/img/game-1.jpg" class="carousel__image" alt="imagen submenu" />
                                     </div>
                                     <!-- Titulo -->
                                     <div class="carousel__detail">
@@ -124,7 +124,7 @@
                                 <li class="carousel__item">
                                     <!-- Imagen -->
                                     <div class="carousel__container-image">
-                                        <img src="assets/img/game-2.webp" class="carousel__image" alt="imagen submenu" />
+                                        <img src="<?= BASE_URL ?>assets/img/game-2.webp" class="carousel__image" alt="imagen submenu" />
                                     </div>
                                     <!-- Titulo -->
                                     <div class="carousel__detail">
@@ -137,7 +137,7 @@
                                 <li class="carousel__item">
                                     <!-- Imagen -->
                                     <div class="carousel__container-image">
-                                        <img src="assets/img/game-3.jpg" class="carousel__image" alt="imagen submenu" />
+                                        <img src="<?= BASE_URL ?>assets/img/game-3.jpg" class="carousel__image" alt="imagen submenu" />
                                     </div>
                                     <!-- Titulo -->
                                     <div class="carousel__detail">
@@ -150,7 +150,7 @@
                                 <li class="carousel__item">
                                     <!-- Imagen -->
                                     <div class="carousel__container-image">
-                                        <img src="assets/img/game-4.jpg" class="carousel__image" alt="imagen submenu" />
+                                        <img src="<?= BASE_URL ?>assets/img/game-4.jpg" class="carousel__image" alt="imagen submenu" />
                                     </div>
                                     <!-- Titulo -->
                                     <div class="carousel__detail">
@@ -172,7 +172,7 @@
                                 <li class="carousel__item">
                                     <!-- Imagen -->
                                     <div class="carousel__container-image">
-                                        <img src="assets/img/game-5-1.jpg" class="carousel__image" alt="imagen submenu" />
+                                        <img src="<?= BASE_URL ?>assets/img/game-5-1.jpg" class="carousel__image" alt="imagen submenu" />
                                     </div>
                                     <!-- Titulo -->
                                     <div class="carousel__detail">
@@ -194,7 +194,7 @@
                                 <li class="carousel__item">
                                     <!-- Imagen -->
                                     <div class="carousel__container-image">
-                                        <img src="assets/img/game-6.jpg" class="carousel__image" alt="imagen submenu" />
+                                        <img src="<?= BASE_URL ?>assets/img/game-6.jpg" class="carousel__image" alt="imagen submenu" />
                                     </div>
                                     <!-- Titulo -->
                                     <div class="carousel__detail">
@@ -216,7 +216,7 @@
                                 <li class="carousel__item">
                                     <!-- Imagen -->
                                     <div class="carousel__container-image">
-                                        <img src="assets/img/game-7.png" class="carousel__image" alt="imagen submenu" />
+                                        <img src="<?= BASE_URL ?>assets/img/game-7.png" class="carousel__image" alt="imagen submenu" />
                                     </div>
                                     <!-- Titulo -->
                                     <div class="carousel__detail">
@@ -238,7 +238,7 @@
                                 <li class="carousel__item">
                                     <!-- Imagen -->
                                     <div class="carousel__container-image">
-                                        <img src="assets/img/game-8.jpg" class="carousel__image" alt="imagen submenu" />
+                                        <img src="<?= BASE_URL ?>assets/img/game-8.jpg" class="carousel__image" alt="imagen submenu" />
                                     </div>
                                     <!-- Titulo -->
                                     <div class="carousel__detail">
@@ -260,7 +260,7 @@
                                 <li class="carousel__item">
                                     <!-- Imagen -->
                                     <div class="carousel__container-image">
-                                        <img src="assets/img/game-9.webp" class="carousel__image" alt="imagen submenu" />
+                                        <img src="<?= BASE_URL ?>assets/img/game-9.webp" class="carousel__image" alt="imagen submenu" />
                                     </div>
                                     <!-- Titulo -->
                                     <div class="carousel__detail">
@@ -291,7 +291,7 @@
                                 <li class="carousel__item">
                                     <!-- Imagen -->
                                     <div class="carousel__container-image">
-                                        <img src="assets/img/game-10.jpg" class="carousel__image" alt="imagen submenu" />
+                                        <img src="<?= BASE_URL ?>assets/img/game-10.jpg" class="carousel__image" alt="imagen submenu" />
                                     </div>
                                     <!-- Titulo -->
                                     <div class="carousel__detail">
@@ -304,7 +304,7 @@
                                 <li class="carousel__item">
                                     <!-- Imagen -->
                                     <div class="carousel__container-image">
-                                        <img src="assets/img/game-19.jpg" class="carousel__image" alt="imagen submenu" />
+                                        <img src="<?= BASE_URL ?>assets/img/game-19.jpg" class="carousel__image" alt="imagen submenu" />
                                     </div>
                                     <!-- Titulo -->
                                     <div class="carousel__detail">
@@ -317,7 +317,7 @@
                                 <li class="carousel__item">
                                     <!-- Imagen -->
                                     <div class="carousel__container-image">
-                                        <img src="assets/img/game-11.jpg" class="carousel__image" alt="imagen submenu" />
+                                        <img src="<?= BASE_URL ?>assets/img/game-11.jpg" class="carousel__image" alt="imagen submenu" />
                                     </div>
                                     <!-- Titulo -->
                                     <div class="carousel__detail">
@@ -330,7 +330,7 @@
                                 <li class="carousel__item">
                                     <!-- Imagen -->
                                     <div class="carousel__container-image">
-                                        <img src="assets/img/game-12.jpg" class="carousel__image" alt="imagen submenu" />
+                                        <img src="<?= BASE_URL ?>assets/img/game-12.jpg" class="carousel__image" alt="imagen submenu" />
                                     </div>
                                     <!-- Titulo -->
                                     <div class="carousel__detail">
@@ -343,7 +343,7 @@
                                 <li class="carousel__item">
                                     <!-- Imagen -->
                                     <div class="carousel__container-image">
-                                        <img src="assets/img/game-13.jpg" class="carousel__image" alt="imagen submenu" />
+                                        <img src="<?= BASE_URL ?>assets/img/game-13.jpg" class="carousel__image" alt="imagen submenu" />
                                     </div>
                                     <!-- Titulo -->
                                     <div class="carousel__detail">
@@ -401,7 +401,7 @@
                                 <li class="carousel__item">
                                     <!-- Imagen -->
                                     <div class="carousel__container-image">
-                                        <img src="assets/img/game-14.jpeg" class="carousel__image" alt="imagen submenu" />
+                                        <img src="<?= BASE_URL ?>assets/img/game-14.jpeg" class="carousel__image" alt="imagen submenu" />
                                     </div>
                                     <!-- Titulo -->
                                     <div class="carousel__detail">
@@ -414,7 +414,7 @@
                                 <li class="carousel__item">
                                     <!-- Imagen -->
                                     <div class="carousel__container-image">
-                                        <img src="assets/img/game-15.jpg" class="carousel__image" alt="imagen submenu" />
+                                        <img src="<?= BASE_URL ?>assets/img/game-15.jpg" class="carousel__image" alt="imagen submenu" />
                                     </div>
 
                                     <!-- Titulo -->
@@ -428,7 +428,7 @@
                                 <li class="carousel__item">
                                     <!-- Imagen -->
                                     <div class="carousel__container-image">
-                                        <img src="assets/img/game-16.jpg" class="carousel__image" alt="imagen submenu" />
+                                        <img src="<?= BASE_URL ?>assets/img/game-16.jpg" class="carousel__image" alt="imagen submenu" />
                                     </div>
                                     <!-- Titulo -->
                                     <div class="carousel__detail">
@@ -441,7 +441,7 @@
                                 <li class="carousel__item">
                                     <!-- Imagen -->
                                     <div class="carousel__container-image">
-                                        <img src="assets/img/game-17.jpg" class="carousel__image" alt="imagen submenu" />
+                                        <img src="<?= BASE_URL ?>assets/img/game-17.jpg" class="carousel__image" alt="imagen submenu" />
                                     </div>
                                     <!-- Titulo -->
                                     <div class="carousel__detail">
@@ -454,7 +454,7 @@
                                 <li class="carousel__item">
                                     <!-- Imagen -->
                                     <div class="carousel__container-image">
-                                        <img src="assets/img/game-18.jpg" class="carousel__image" alt="imagen submenu" />
+                                        <img src="<?= BASE_URL ?>assets/img/game-18.jpg" class="carousel__image" alt="imagen submenu" />
                                     </div>
                                     <!-- Titulo -->
                                     <div class="carousel__detail">

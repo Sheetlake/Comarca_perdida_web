@@ -1,3 +1,6 @@
+<?php
+require_once 'config/constants.php';
+?>
 <!DOCTYPE html>
 <html lang="es">
 
@@ -6,16 +9,16 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
   <!-- Carga de fuentes -->
-  <link rel="stylesheet" href="assets/fonts/fontawesome-free-6.1.2-web/css/all.min.css" />
-  <link rel="stylesheet" href="assets/fonts/montserrat/montserrat.css" />
+  <link rel="stylesheet" href="<?= BASE_URL ?>assets/fonts/fontawesome-free-6.1.2-web/css/all.min.css" />
+  <link rel="stylesheet" href="<?= BASE_URL ?>assets/fonts/montserrat/montserrat.css" />
   <!-- Carga de estilos -->
-  <link rel="stylesheet" href="assets/css/reset.css" />
-  <link rel="stylesheet" href="assets/css/styles.css" />
-  <link rel="stylesheet" href="assets/css/responsive.css" />
+  <link rel="stylesheet" href="<?= BASE_URL ?>assets/css/reset.css" />
+  <link rel="stylesheet" href="<?= BASE_URL ?>assets/css/styles.css" />
+  <link rel="stylesheet" href="<?= BASE_URL ?>assets/css/responsive.css" />
   <!-- Carga de javascript -->
-  <script src="assets/js/main.js" defer></script>
-  <script src="assets/js/marquee.js" defer></script>
-  <script src="assets/js/menu.js" defer></script>
+  <script src="<?= BASE_URL ?>assets/js/main.js" defer></script>
+  <script src="<?= BASE_URL ?>assets/js/marquee.js" defer></script>
+  <script src="<?= BASE_URL ?>assets/js/menu.js" defer></script>
 
   <title>La comarca Perdida</title>
 </head>
@@ -30,7 +33,7 @@
     <header class="layout__header">
       <div class="header__title">
         <a href="#" class="header__link">
-          <img src="assets/img/logo1.png" alt="Logo" class="header__img" />
+          <img src="<?= BASE_URL ?>assets/img/logo1.png" alt="Logo" class="header__img" />
         </a>
       </div>
     </header>
@@ -138,7 +141,7 @@
                   <li class="carousel__item">
                     <!-- Imagen -->
                     <div class="carousel__container-image">
-                      <img src="assets/img/game-1.jpg" class="carousel__image" alt="imagen submenu" />
+                      <img src="<?= BASE_URL ?>assets/img/game-1.jpg" class="carousel__image" alt="imagen submenu" />
                     </div>
                     <!-- Titulo -->
                     <div class="carousel__detail">
@@ -160,7 +163,7 @@
                   <li class="carousel__item">
                     <!-- Imagen -->
                     <div class="carousel__container-image">
-                      <img src="assets/img/game-2.webp" class="carousel__image" alt="imagen submenu" />
+                      <img src="<?= BASE_URL ?>assets/img/game-2.webp" class="carousel__image" alt="imagen submenu" />
                     </div>
                     <!-- Titulo -->
                     <div class="carousel__detail">
@@ -173,7 +176,7 @@
                   <li class="carousel__item">
                     <!-- Imagen -->
                     <div class="carousel__container-image">
-                      <img src="assets/img/game-3.jpg" class="carousel__image" alt="imagen submenu" />
+                      <img src="<?= BASE_URL ?>assets/img/game-3.jpg" class="carousel__image" alt="imagen submenu" />
                     </div>
                     <!-- Titulo -->
                     <div class="carousel__detail">
@@ -186,7 +189,7 @@
                   <li class="carousel__item">
                     <!-- Imagen -->
                     <div class="carousel__container-image">
-                      <img src="assets/img/game-4.jpg" class="carousel__image" alt="imagen submenu" />
+                      <img src="<?= BASE_URL ?>assets/img/game-4.jpg" class="carousel__image" alt="imagen submenu" />
                     </div>
                     <!-- Titulo -->
                     <div class="carousel__detail">
@@ -208,7 +211,7 @@
                   <li class="carousel__item">
                     <!-- Imagen -->
                     <div class="carousel__container-image">
-                      <img src="assets/img/game-5-1.jpg" class="carousel__image" alt="imagen submenu" />
+                      <img src="<?= BASE_URL ?>assets/img/game-5-1.jpg" class="carousel__image" alt="imagen submenu" />
                     </div>
                     <!-- Titulo -->
                     <div class="carousel__detail">
@@ -230,7 +233,7 @@
                   <li class="carousel__item">
                     <!-- Imagen -->
                     <div class="carousel__container-image">
-                      <img src="assets/img/game-6.jpg" class="carousel__image" alt="imagen submenu" />
+                      <img src="<?= BASE_URL ?>assets/img/game-6.jpg" class="carousel__image" alt="imagen submenu" />
                     </div>
                     <!-- Titulo -->
                     <div class="carousel__detail">
@@ -252,7 +255,7 @@
                   <li class="carousel__item">
                     <!-- Imagen -->
                     <div class="carousel__container-image">
-                      <img src="assets/img/game-7.png" class="carousel__image" alt="imagen submenu" />
+                      <img src="<?= BASE_URL ?>assets/img/game-7.png" class="carousel__image" alt="imagen submenu" />
                     </div>
                     <!-- Titulo -->
                     <div class="carousel__detail">
@@ -274,7 +277,7 @@
                   <li class="carousel__item">
                     <!-- Imagen -->
                     <div class="carousel__container-image">
-                      <img src="assets/img/game-8.jpg" class="carousel__image" alt="imagen submenu" />
+                      <img src="<?= BASE_URL ?>assets/img/game-8.jpg" class="carousel__image" alt="imagen submenu" />
                     </div>
                     <!-- Titulo -->
                     <div class="carousel__detail">
@@ -296,7 +299,7 @@
                   <li class="carousel__item">
                     <!-- Imagen -->
                     <div class="carousel__container-image">
-                      <img src="assets/img/game-9.webp" class="carousel__image" alt="imagen submenu" />
+                      <img src="<?= BASE_URL ?>assets/img/game-9.webp" class="carousel__image" alt="imagen submenu" />
                     </div>
                     <!-- Titulo -->
                     <div class="carousel__detail">
@@ -327,7 +330,7 @@
                   <li class="carousel__item">
                     <!-- Imagen -->
                     <div class="carousel__container-image">
-                      <img src="assets/img/game-10.jpg" class="carousel__image" alt="imagen submenu" />
+                      <img src="<?= BASE_URL ?>assets/img/game-10.jpg" class="carousel__image" alt="imagen submenu" />
                     </div>
                     <!-- Titulo -->
                     <div class="carousel__detail">
@@ -340,7 +343,7 @@
                   <li class="carousel__item">
                     <!-- Imagen -->
                     <div class="carousel__container-image">
-                      <img src="assets/img/game-19.jpg" class="carousel__image" alt="imagen submenu" />
+                      <img src="<?= BASE_URL ?>assets/img/game-19.jpg" class="carousel__image" alt="imagen submenu" />
                     </div>
                     <!-- Titulo -->
                     <div class="carousel__detail">
@@ -353,7 +356,7 @@
                   <li class="carousel__item">
                     <!-- Imagen -->
                     <div class="carousel__container-image">
-                      <img src="assets/img/game-11.jpg" class="carousel__image" alt="imagen submenu" />
+                      <img src="<?= BASE_URL ?>assets/img/game-11.jpg" class="carousel__image" alt="imagen submenu" />
                     </div>
                     <!-- Titulo -->
                     <div class="carousel__detail">
@@ -366,7 +369,7 @@
                   <li class="carousel__item">
                     <!-- Imagen -->
                     <div class="carousel__container-image">
-                      <img src="assets/img/game-12.jpg" class="carousel__image" alt="imagen submenu" />
+                      <img src="<?= BASE_URL ?>assets/img/game-12.jpg" class="carousel__image" alt="imagen submenu" />
                     </div>
                     <!-- Titulo -->
                     <div class="carousel__detail">
@@ -379,7 +382,7 @@
                   <li class="carousel__item">
                     <!-- Imagen -->
                     <div class="carousel__container-image">
-                      <img src="assets/img/game-13.jpg" class="carousel__image" alt="imagen submenu" />
+                      <img src="<?= BASE_URL ?>assets/img/game-13.jpg" class="carousel__image" alt="imagen submenu" />
                     </div>
                     <!-- Titulo -->
                     <div class="carousel__detail">
@@ -437,7 +440,7 @@
                   <li class="carousel__item">
                     <!-- Imagen -->
                     <div class="carousel__container-image">
-                      <img src="assets/img/game-14.jpeg" class="carousel__image" alt="imagen submenu" />
+                      <img src="<?= BASE_URL ?>assets/img/game-14.jpeg" class="carousel__image" alt="imagen submenu" />
                     </div>
                     <!-- Titulo -->
                     <div class="carousel__detail">
@@ -450,7 +453,7 @@
                   <li class="carousel__item">
                     <!-- Imagen -->
                     <div class="carousel__container-image">
-                      <img src="assets/img/game-15.jpg" class="carousel__image" alt="imagen submenu" />
+                      <img src="<?= BASE_URL ?>assets/img/game-15.jpg" class="carousel__image" alt="imagen submenu" />
                     </div>
 
                     <!-- Titulo -->
@@ -464,7 +467,7 @@
                   <li class="carousel__item">
                     <!-- Imagen -->
                     <div class="carousel__container-image">
-                      <img src="assets/img/game-16.jpg" class="carousel__image" alt="imagen submenu" />
+                      <img src="<?= BASE_URL ?>assets/img/game-16.jpg" class="carousel__image" alt="imagen submenu" />
                     </div>
                     <!-- Titulo -->
                     <div class="carousel__detail">
@@ -477,7 +480,7 @@
                   <li class="carousel__item">
                     <!-- Imagen -->
                     <div class="carousel__container-image">
-                      <img src="assets/img/game-17.jpg" class="carousel__image" alt="imagen submenu" />
+                      <img src="<?= BASE_URL ?>assets/img/game-17.jpg" class="carousel__image" alt="imagen submenu" />
                     </div>
                     <!-- Titulo -->
                     <div class="carousel__detail">
@@ -490,7 +493,7 @@
                   <li class="carousel__item">
                     <!-- Imagen -->
                     <div class="carousel__container-image">
-                      <img src="assets/img/game-18.jpg" class="carousel__image" alt="imagen submenu" />
+                      <img src="<?= BASE_URL ?>assets/img/game-18.jpg" class="carousel__image" alt="imagen submenu" />
                     </div>
                     <!-- Titulo -->
                     <div class="carousel__detail">
@@ -581,7 +584,7 @@
     <section class="layout__slider">
       <article class="slider__container slider__container--slider1">
         <a href="#" class="slider__link">
-          <img src="assets/img/slider-1.jpg" class="slider__img" />
+          <img src="<?= BASE_URL ?>assets/img/slider-1.jpg" class="slider__img" />
         </a>
         <div class="slider__info">
           <a href="#" class="slider__category"> JUEGOS </a>
@@ -600,7 +603,7 @@
       </article>
       <article class="slider__container slider__container--slider2">
         <a href="#" class="slider__link">
-          <img src="assets/img/slider-2.jpg" class="slider__img" />
+          <img src="<?= BASE_URL ?>assets/img/slider-2.jpg" class="slider__img" />
         </a>
         <div class="slider__info">
           <a href="#" class="slider__category"> JUEGOS </a>
@@ -612,7 +615,7 @@
       </article>
       <article class="slider__container slider__container--slider3">
         <a href="#" class="slider__link">
-          <img src="assets/img/slider-3.jpeg" class="slider__img" />
+          <img src="<?= BASE_URL ?>assets/img/slider-3.jpeg" class="slider__img" />
         </a>
         <div class="slider__info">
           <a href="#" class="slider__category"> JUEGOS </a>
@@ -624,7 +627,7 @@
       </article>
       <article class="slider__container slider__container--slider4">
         <a href="#" class="slider__link">
-          <img src="assets/img/slider-5.png" class="slider__img" />
+          <img src="<?= BASE_URL ?>assets/img/slider-5.png" class="slider__img" />
         </a>
         <div class="slider__info">
           <a href="#" class="slider__category"> JUEGOS </a>
@@ -636,7 +639,7 @@
       </article>
       <article class="slider__container slider__container--slider5">
         <a href="#" class="slider__link">
-          <img src="assets/img/slider-4.jpg" class="slider__img" />
+          <img src="<?= BASE_URL ?>assets/img/slider-4.jpg" class="slider__img" />
         </a>
         <div class="slider__info">
           <a href="#" class="slider__category"> JUEGOS </a>
@@ -658,7 +661,7 @@
         <article class="highlights__post">
           <div class="highlights__image">
             <a href="#" class="highlights__image-link">
-              <img src="assets/img/highlight-2.jpg" class="highlights__img" />
+              <img src="<?= BASE_URL ?>assets/img/highlight-2.jpg" class="highlights__img" />
             </a>
             <div class="highlights__category">
               <a href="#" class="highlights__name-category">Juegos</a>
@@ -697,7 +700,7 @@
         <article class="highlights__post">
           <div class="highlights__image">
             <a href="#" class="highlights__image-link">
-              <img src="assets/img/highlight-1.jpg" class="highlights__img" />
+              <img src="<?= BASE_URL ?>assets/img/highlight-1.jpg" class="highlights__img" />
             </a>
             <div class="highlights__category">
               <a href="#" class="highlights__name-category">Juegos</a>
@@ -736,7 +739,7 @@
         <article class="highlights__post">
           <div class="highlights__image">
             <a href="#" class="highlights__image-link">
-              <img src="assets/img/highlight-3.jpg" class="highlights__img" />
+              <img src="<?= BASE_URL ?>assets/img/highlight-3.jpg" class="highlights__img" />
             </a>
             <div class="highlights__category">
               <a href="#" class="highlights__name-category">Juegos</a>
@@ -786,7 +789,7 @@
         <div class="videos__main-video">
           <div class="main-video__yt-video">
             <iframe
-              src="https://www.youtube.com/embed/6XGeJwsUP9c?si=Wzroxu2ZeQ3Jsvnj"
+              src="https://www.youtube.com/embed/MFfuZzmiPNw?si=6O4ZiDhav3TEkHU_"
               title="YouTube video player"
               frameborder="0"
               allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
@@ -815,10 +818,10 @@
 
         <!-- Lista de videos -->
         <div class="videos__list">
-          <article class="videos__video" data-video-id="6XGeJwsUP9c">
+          <article class="videos__video" data-video-id="MFfuZzmiPNw">
             <div class="video__detail">
               <h4 class="video__title">
-                <a href="#" class="video__link"> Los 5 mejores videojuegos de 2024 </a>
+                <a href="#" class="video__link"> Hollow Knight Silksong: Review </a>
               </h4>
               <div class="video__info">
                 <a href="#" class="video__author">Eurogamer</a>
@@ -828,14 +831,14 @@
 
             <div class="video__image">
               <a href="#" class="video__image-link">
-                <img src="assets/img/latest-video-1.jpeg" class="video__img" />
+                <img src="<?= BASE_URL ?>assets/img/latest-video-1.png" class="video__img" />
               </a>
             </div>
           </article>
-          <article class="videos__video" data-video-id="sWIlhLTwuMA">
+          <article class="videos__video" data-video-id="MFx3st_vrUA">
             <div class="video__detail">
               <h4 class="video__title">
-                <a href="#" class="video__link"> Trailer EA FC24 </a>
+                <a href="#" class="video__link"> Trailer EA FC25 </a>
               </h4>
               <div class="video__info">
                 <a href="#" class="video__author">Vandal</a>
@@ -845,41 +848,41 @@
 
             <div class="video__image">
               <a href="#" class="video__image-link">
-                <img src="assets/img/latest-video-2.png" class="video__img" />
+                <img src="<?= BASE_URL ?>assets/img/latest-video-2.jpg" class="video__img" />
               </a>
             </div>
           </article>
-          <article class="videos__video" data-video-id="DskpvqZDk94">
+          <article class="videos__video" data-video-id="-qgOZDRDynw">
             <div class="video__detail">
               <h4 class="video__title">
-                <a href="#" class="video__link"> Trailer Devil May cry 5 </a>
+                <a href="#" class="video__link"> Trailer Lanzamiento - Clair Obscur: Expedition 33 </a>
               </h4>
               <div class="video__info">
-                <a href="#" class="video__author">3DJuegos</a>
+                <a href="#" class="video__author">PlayStation</a>
                 <span class="video__date"> Marzo 27, 2025 </span>
               </div>
             </div>
 
             <div class="video__image">
               <a href="#" class="video__image-link">
-                <img src="assets/img/latest-video-3.gif" class="video__img" />
+                <img src="<?= BASE_URL ?>assets/img/latest-video-3.gif" class="video__img" />
               </a>
             </div>
           </article>
-          <article class="videos__video" data-video-id="QBf_mDYDY0Y">
+          <article class="videos__video" data-video-id="BtyBjOW8sGY">
             <div class="video__detail">
               <h4 class="video__title">
                 <a href="#" class="video__link"> Trailer de Hogwarts Legacy </a>
               </h4>
               <div class="video__info">
-                <a href="#" class="video__author">Sensession</a>
+                <a href="#" class="video__author">Warner Bros.</a>
                 <span class="video__date"> Julio 30, 2024 </span>
               </div>
             </div>
 
             <div class="video__image">
               <a href="#" class="video__image-link">
-                <img src="assets/img/latest-video-4.webp" class="video__img" />
+                <img src="<?= BASE_URL ?>assets/img/latest-video-4.webp" class="video__img" />
               </a>
             </div>
           </article>
@@ -893,7 +896,7 @@
         <li class="carousel-games__item">
           <div class="carousel-games__image">
             <a href="#" class="carousel-games__image-link"></a>
-            <img src="assets/img/carrusel-games-1.jpg" class="carousel-games__img" />
+            <img src="<?= BASE_URL ?>assets/img/carrusel-games-1.jpg" class="carousel-games__img" />
           </div>
           <div class="carousel-games__rating">
             <div class="rating__circle">
@@ -913,7 +916,7 @@
         <li class="carousel-games__item carousel-games__item--hidden-smaller">
           <div class="carousel-games__image">
             <a href="#" class="carousel-games__image-link"></a>
-            <img src="assets/img/carrusel-games-2.jpg" class="carousel-games__img" />
+            <img src="<?= BASE_URL ?>assets/img/carrusel-games-2.jpg" class="carousel-games__img" />
           </div>
           <div class="carousel-games__rating">
             <div class="rating__circle">
@@ -933,7 +936,7 @@
         <li class="carousel-games__item carousel-games__item--hidden">
           <div class="carousel-games__image">
             <a href="#" class="carousel-games__image-link"></a>
-            <img src="assets/img/carrusel-games-3.jpg" class="carousel-games__img" />
+            <img src="<?= BASE_URL ?>assets/img/carrusel-games-3.jpg" class="carousel-games__img" />
           </div>
           <div class="carousel-games__rating">
             <div class="rating__circle">
@@ -953,7 +956,7 @@
         <li class="carousel-games__item carousel-games__item--hidden">
           <div class="carousel-games__image">
             <a href="#" class="carousel-games__image-link"></a>
-            <img src="assets/img/carrusel-games-4.jpg" class="carousel-games__img" />
+            <img src="<?= BASE_URL ?>assets/img/carrusel-games-4.jpg" class="carousel-games__img" />
           </div>
           <div class="carousel-games__rating">
             <div class="rating__circle">
@@ -985,7 +988,7 @@
           <article class="news__main-post">
             <div class="main-post__image">
               <a href="#" class="main-post__link-image">
-                <img src="assets/img/news-1.jpg" class="main-post__img" />
+                <img src="<?= BASE_URL ?>assets/img/news-1.jpg" class="main-post__img" />
               </a>
               <div class="main-post__container-category">
                 <a href="#" class="main-post__category"> Noticias </a>
@@ -993,7 +996,7 @@
             </div>
             <div class="main-post__info">
               <h3 class="main-post__title">
-                <a href="article.php" class="main-post__link-title"> Nuevos leaks GTA 6 </a>
+                <a href="views/article/article.php?id=1" class="main-post__link-title"> Nuevos leaks GTA 6 </a>
               </h3>
               <div class="main-post__meta">
                 <div class="main-post__container-author">
@@ -1026,7 +1029,7 @@
             <article class="news__post">
               <div class="news__image">
                 <a href="#" class="news__link-image">
-                  <img src="assets/img/news-2.jpg" class="news__img" />
+                  <img src="<?= BASE_URL ?>assets/img/news-2.jpg" class="news__img" />
                 </a>
               </div>
               <div class="news__detail">
@@ -1042,7 +1045,7 @@
             <article class="news__post">
               <div class="news__image">
                 <a href="#" class="news__link-image">
-                  <img src="assets/img/news-3.jpg" class="news__img" />
+                  <img src="<?= BASE_URL ?>assets/img/news-3.jpg" class="news__img" />
                 </a>
               </div>
               <div class="news__detail">
@@ -1058,7 +1061,7 @@
             <article class="news__post">
               <div class="news__image">
                 <a href="#" class="news__link-image">
-                  <img src="assets/img/news-4.jpg" class="news__img" />
+                  <img src="<?= BASE_URL ?>assets/img/news-4.jpg" class="news__img" />
                 </a>
               </div>
               <div class="news__detail">
@@ -1074,7 +1077,7 @@
             <article class="news__post">
               <div class="news__image">
                 <a href="#" class="news__link-image">
-                  <img src="assets/img/news-5.jpg" class="news__img" />
+                  <img src="<?= BASE_URL ?>assets/img/news-5.jpg" class="news__img" />
                 </a>
               </div>
               <div class="news__detail">
@@ -1102,7 +1105,7 @@
           <article class="games__game">
             <div class="game__container-image">
               <a href="#" class="game__link-image">
-                <img src="assets/img/main-game-1.jpg" class="game__img" />
+                <img src="<?= BASE_URL ?>assets/img/main-game-1.jpg" class="game__img" />
               </a>
               <div class="game__rating">
                 <div class="rating__circle">
@@ -1126,7 +1129,7 @@
           <article class="games__game">
             <div class="game__container-image">
               <a href="#" class="game__link-image">
-                <img src="assets/img/main-game-2.jpg" class="game__img" />
+                <img src="<?= BASE_URL ?>assets/img/main-game-2.jpg" class="game__img" />
               </a>
               <div class="game__rating">
                 <div class="rating__circle">
@@ -1150,7 +1153,7 @@
           <article class="games__game">
             <div class="game__container-image">
               <a href="#" class="game__link-image">
-                <img src="assets/img/main-game-3.jpg" class="game__img" />
+                <img src="<?= BASE_URL ?>assets/img/main-game-3.jpg" class="game__img" />
               </a>
               <div class="game__rating">
                 <div class="rating__circle">
@@ -1174,7 +1177,7 @@
           <article class="games__game">
             <div class="game__container-image">
               <a href="#" class="game__link-image">
-                <img src="assets/img/main-game-4.jpg" class="game__img" />
+                <img src="<?= BASE_URL ?>assets/img/main-game-4.jpg" class="game__img" />
               </a>
               <div class="game__rating">
                 <div class="rating__circle">
@@ -1214,7 +1217,7 @@
           <article class="posts__post">
             <div class="post__container-image">
               <a href="#" class="post__link-image">
-                <img src="assets/img/main-game-1.jpg" class="post__img" />
+                <img src="<?= BASE_URL ?>assets/img/main-game-1.jpg" class="post__img" />
               </a>
               <div class="post__container-category">
                 <a href="#" class="post__category">Juegos</a>
@@ -1253,7 +1256,7 @@
           <article class="posts__post">
             <div class="post__container-image">
               <a href="#" class="post__link-image">
-                <img src="assets/img/latest-2.jpg" class="post__img" />
+                <img src="<?= BASE_URL ?>assets/img/latest-2.jpg" class="post__img" />
               </a>
               <div class="post__container-category">
                 <a href="#" class="post__category">Juegos</a>
@@ -1292,7 +1295,7 @@
           <article class="posts__post">
             <div class="post__container-image">
               <a href="#" class="post__link-image">
-                <img src="assets/img/main-game-2.jpg" class="post__img" />
+                <img src="<?= BASE_URL ?>assets/img/main-game-2.jpg" class="post__img" />
               </a>
               <div class="post__container-category">
                 <a href="#" class="post__category">Juegos</a>
@@ -1331,7 +1334,7 @@
           <article class="posts__post">
             <div class="post__container-image">
               <a href="#" class="post__link-image">
-                <img src="assets/img/latest-4.jpg" class="post__img" />
+                <img src="<?= BASE_URL ?>assets/img/latest-4.jpg" class="post__img" />
               </a>
               <div class="post__container-category">
                 <a href="#" class="post__category">Juegos</a>
@@ -1500,7 +1503,7 @@
             <li class="recent__item">
               <div class="recent__container-image">
                 <a href="#" class="recent__link-image">
-                  <img src="assets/img/recent-1.jpg" class="recent__img" />
+                  <img src="<?= BASE_URL ?>assets/img/recent-1.jpg" class="recent__img" />
                 </a>
               </div>
               <div class="recent__detail">
@@ -1525,7 +1528,7 @@
             <li class="recent__item">
               <div class="recent__container-image">
                 <a href="#" class="recent__link-image">
-                  <img src="assets/img/recent-2.jpg" class="recent__img" />
+                  <img src="<?= BASE_URL ?>assets/img/recent-2.jpg" class="recent__img" />
                 </a>
               </div>
               <div class="recent__detail">
@@ -1550,7 +1553,7 @@
             <li class="recent__item">
               <div class="recent__container-image">
                 <a href="#" class="recent__link-image">
-                  <img src="assets/img/recent-3.jpg" class="recent__img" />
+                  <img src="<?= BASE_URL ?>assets/img/recent-3.jpg" class="recent__img" />
                 </a>
               </div>
               <div class="recent__detail">
@@ -1575,7 +1578,7 @@
             <li class="recent__item">
               <div class="recent__container-image">
                 <a href="#" class="recent__link-image">
-                  <img src="assets/img/recent-4.jpg" class="recent__img" />
+                  <img src="<?= BASE_URL ?>assets/img/recent-4.jpg" class="recent__img" />
                 </a>
               </div>
               <div class="recent__detail">
@@ -1600,7 +1603,7 @@
             <li class="recent__item">
               <div class="recent__container-image">
                 <a href="#" class="recent__link-image">
-                  <img src="assets/img/recent-5.jpg" class="recent__img" />
+                  <img src="<?= BASE_URL ?>assets/img/recent-5.jpg" class="recent__img" />
                 </a>
               </div>
               <div class="recent__detail">
@@ -1750,7 +1753,7 @@
           <li class="list-popular__item">
             <div class="list-popular__container-image">
               <a href="#" class="list-popular__link-image">
-                <img src="assets/img/popular-1.jpg" class="list-popular__img" />
+                <img src="<?= BASE_URL ?>assets/img/popular-1.jpg" class="list-popular__img" />
               </a>
             </div>
             <div class="list-popular__detail">
@@ -1776,7 +1779,7 @@
           <li class="list-popular__item">
             <div class="list-popular__container-image">
               <a href="#" class="list-popular__link-image">
-                <img src="assets/img/popular-2.jpg" class="list-popular__img" />
+                <img src="<?= BASE_URL ?>assets/img/popular-2.jpg" class="list-popular__img" />
               </a>
             </div>
             <div class="list-popular__detail">
@@ -1802,7 +1805,7 @@
           <li class="list-popular__item">
             <div class="list-popular__container-image">
               <a href="#" class="list-popular__link-image">
-                <img src="assets/img/popular-3.jpg" class="list-popular__img" />
+                <img src="<?= BASE_URL ?>assets/img/popular-3.jpg" class="list-popular__img" />
               </a>
             </div>
             <div class="list-popular__detail">
@@ -1828,7 +1831,7 @@
           <li class="list-popular__item">
             <div class="list-popular__container-image">
               <a href="#" class="list-popular__link-image">
-                <img src="assets/img/popular-4.jpg" class="list-popular__img" />
+                <img src="<?= BASE_URL ?>assets/img/popular-4.jpg" class="list-popular__img" />
               </a>
             </div>
             <div class="list-popular__detail">
@@ -1855,7 +1858,7 @@
         <h3 class="footer__title">Último post</h3>
 
         <div class="footer__slider">
-          <img src="assets/img/slider-footer.jpg" class="f-slider__img" />
+          <img src="<?= BASE_URL ?>assets/img/slider-footer.jpg" class="f-slider__img" />
 
           <div class="f-slider__info">
             <h4 class="f-slider__category">Juegos</h4>
