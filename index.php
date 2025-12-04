@@ -33,7 +33,7 @@ require_once 'config/constants.php';
     <header class="layout__header">
       <div class="header__title">
         <a href="#" class="header__link">
-          <img src="<?= BASE_URL ?>assets/img/logo1.png" alt="Logo" class="header__img" />
+          <img src="<?= BASE_URL ?>assets/img/logo4.png" alt="Logo" class="header__img" />
         </a>
       </div>
     </header>
@@ -51,7 +51,7 @@ require_once 'config/constants.php';
           <!-- Elemento con submenu -->
           <li class="mobile-list__item">
             <div class="mobile-list__container">
-              <a href="#" class="mobile-list__link">NOTICIAS</a>
+              <a href="<?= BASE_URL ?>views/list/list.php?tipo=noticia" class="mobile-list__link">NOTICIAS</a>
               <div class="mobile-list__icon" id="icon1">
                 <i class="fa-solid fa-chevron-down"></i>
               </div>
@@ -583,14 +583,26 @@ require_once 'config/constants.php';
     <!-- Slider -->
     <section class="layout__slider">
       <article class="slider__container slider__container--slider1">
-        <a href="#" class="slider__link">
+        <a href="<?= BASE_URL ?>views/article/article.php?id=1" class="slider__link">
           <img src="<?= BASE_URL ?>assets/img/slider-1.jpg" class="slider__img" />
         </a>
         <div class="slider__info">
           <a href="#" class="slider__category"> JUEGOS </a>
           <div class="slider__line"></div>
           <h2 class="slider__title">
-            <a href="#" class="slider__link-title">Mejores juegos de 2025</a>
+            <a href="<?= BASE_URL ?>views/article/article.php?id=1" class="slider__link-title">Los videojuegos en la educación</a>
+          </h2>
+        </div>
+      </article>
+      <article class="slider__container slider__container--slider2">
+        <a href="<?= BASE_URL ?>views/article/article.php?id=3" class="slider__link">
+          <img src="<?= BASE_URL ?>assets/img/slider-2.jfif" class="slider__img" />
+        </a>
+        <div class="slider__info">
+          <a href="#" class="slider__category"> JUEGOS </a>
+          <div class="slider__line"></div>
+          <h2 class="slider__title">
+            <a href="<?= BASE_URL ?>views/article/article.php?id=3" class="slider__link-title">Review de Persona 3: Reload</a>
           </h2>
         </div>
         <div class="slider__rating">
@@ -601,51 +613,39 @@ require_once 'config/constants.php';
           </div>
         </div>
       </article>
-      <article class="slider__container slider__container--slider2">
-        <a href="#" class="slider__link">
-          <img src="<?= BASE_URL ?>assets/img/slider-2.jfif" class="slider__img" />
-        </a>
-        <div class="slider__info">
-          <a href="#" class="slider__category"> JUEGOS </a>
-          <div class="slider__line"></div>
-          <h2 class="slider__title">
-            <a href="#" class="slider__link-title">Review de The last of Us Part 1</a>
-          </h2>
-        </div>
-      </article>
       <article class="slider__container slider__container--slider3">
-        <a href="#" class="slider__link">
+        <a href="<?= BASE_URL ?>views/article/article.php?id=4" class="slider__link">
           <img src="<?= BASE_URL ?>assets/img/slider-3.jpg" class="slider__img" />
         </a>
         <div class="slider__info">
           <a href="#" class="slider__category"> JUEGOS </a>
           <div class="slider__line"></div>
           <h2 class="slider__title">
-            <a href="#" class="slider__link-title">Clair Obscur: Expedition 33 Arrasa en los TGA</a>
+            <a href="<?= BASE_URL ?>views/article/article.php?id=4" class="slider__link-title">Clair Obscur: Expedition 33 Arrasa en los TGA</a>
           </h2>
         </div>
       </article>
       <article class="slider__container slider__container--slider4">
-        <a href="#" class="slider__link">
+        <a href="<?= BASE_URL ?>views/article/article.php?id=5" class="slider__link">
           <img src="<?= BASE_URL ?>assets/img/slider-5.jpg" class="slider__img" />
         </a>
         <div class="slider__info">
-          <a href="#" class="slider__category"> JUEGOS </a>
+          <a href="#" class="slider__category"> SERIES </a>
           <div class="slider__line"></div>
           <h2 class="slider__title">
-            <a href="#" class="slider__link-title">Mejores Skins de Valorant</a>
+            <a href="<?= BASE_URL ?>views/article/article.php?id=5" class="slider__link-title">Stranger Things Temporada 5: Ya en Netflix</a>
           </h2>
         </div>
       </article>
       <article class="slider__container slider__container--slider5">
-        <a href="#" class="slider__link">
+        <a href="<?= BASE_URL ?>views/article/article.php?id=6" class="slider__link">
           <img src="<?= BASE_URL ?>assets/img/slider-42.jpg" class="slider__img" />
         </a>
         <div class="slider__info">
           <a href="#" class="slider__category"> JUEGOS </a>
           <div class="slider__line"></div>
           <h2 class="slider__title">
-            <a href="#" class="slider__link-title">Impresiones de Battlefield 2042</a>
+            <a href="<?= BASE_URL ?>views/article/article.php?id=6" class="slider__link-title">Guia de Hollow Knight: Silksong</a>
           </h2>
         </div>
       </article>
@@ -1034,7 +1034,7 @@ require_once 'config/constants.php';
               </div>
               <div class="news__detail">
                 <h4 class="news__title-post">
-                  <a href="views/article/article.php?id=2" class="news__link-title"> Lanzamientos más esperados para 2025 </a>
+                  <a href="views/article/article.php?id=2" class="news__link-title"> Micron abandona el mercado de consumo </a>
                 </h4>
                 <div class="news__data">
                   <a href="#" class="news__author">Jorge</a>

@@ -60,7 +60,7 @@ $entradas = $tipoEntrada ? $controladorArticulos->listarEntradasPorTipo($tipoEnt
               <div class="alist__image">
                 <!-- Imagen del elemento -->
                 <a href="" class="alist__image-link">
-                  <img src="<?= BASE_URL . $entrada['imagen_destacada'] ?>" class="alist__img">
+                  <img src="<?= BASE_URL . "assets/img/" . $entrada['imagen_destacada'] ?>" class="alist__img">
                 </a>
               </div>
               <!-- Contenedor de la informacion de la entrada -->

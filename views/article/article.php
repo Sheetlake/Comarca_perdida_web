@@ -60,7 +60,7 @@ $entrada = $idEntrada ? $controladorArticulos->obtenerEntradaPorId($idEntrada) :
           <header class="article__header">
             <!-- Contenedor de la imagen -->
             <div class="article__image">
-              <img src="<?= BASE_URL . $entrada['imagen_destacada'] ?>" class="article__img">
+              <img src="<?= BASE_URL . "assets/img/" . $entrada['imagen_destacada'] ?>" class="article__img">
             </div>
             <!-- Titulo -->
             <h1 class="article__title"><?= htmlspecialchars($entrada['titulo']) ?></h1>

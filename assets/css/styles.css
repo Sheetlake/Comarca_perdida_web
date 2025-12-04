@@ -3,9 +3,9 @@
 
 :root{
     --color-principal: #FFFFFF;
-    --color-secondary: #329153;
+    --color-secondary: #196ECE;
     --color-titles: #333333;
-    --color-bgNavbar: #333946;
+    --color-bgNavbar: #081E3C;
     --color-border-list: rgba(255, 255, 255, 0.3);
     --color-hover-sublist-item:rgba(0, 0, 0, 0.05);
     --color-shadow: rgba(0, 0, 0, 0.10);
@@ -24,6 +24,22 @@
 
     --color-footer: #222222;
     --color-footer-down: #111111;
+
+    /*Colores tematicos*/
+    --color-sonic: #0883FE;
+    --color-tails: #FFAC2D;
+    --color-knuckles: #E90C09;
+
+
+    --color-persona-3-blue:#196ECE;
+    --color-persona-3-dark-blue:#081E3C;
+
+
+    --color-persona-5-red: #D92323;
+    --color-persona-5-black: #0D0D0D;
+
+    --color-bgNavbar-backup: #333946;
+    --color-secondary-backup: #329153;
 }
 
 /*********************************************************************************************/
@@ -167,7 +183,7 @@ body{
 }
 
 .header__img{
-    width: 17rem;
+    width: 30rem;
 }
 
 /*********************************************************************************************/

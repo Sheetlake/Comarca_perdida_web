@@ -12,7 +12,7 @@
                 <!-- Elemento con submenu -->
                 <li class="mobile-list__item">
                     <div class="mobile-list__container">
-                        <a href="#" class="mobile-list__link">NOTICIAS</a>
+                        <a href="<?= BASE_URL ?>views/list/list.php?tipo=noticia" class="mobile-list__link">NOTICIAS</a>
                         <div class="mobile-list__icon" id="icon1">
                             <i class="fa-solid fa-chevron-down"></i>
                         </div>
