@@ -14,7 +14,7 @@ class Entrada
     public function obtenerTodasLasEntradas()
     {
         $consulta = "
-            SELECT e.id, e.tipo, e.titulo, e.contenido, e.fecha, e.slug,
+            SELECT e.id, e.tipo, e.titulo, e.subtitulo, e.contenido, e.fecha, e.slug,
                    a.nombre AS autor_nombre, a.apellidos AS autor_apellidos,
                    c.nombre AS categoria
             FROM entradas e
@@ -41,7 +41,7 @@ class Entrada
     public function obtenerEntradaPorSlug($slug)
     {
         $consulta = "
-            SELECT e.id, e.tipo, e.titulo, e.contenido, e.fecha, e.slug,
+            SELECT e.id, e.tipo, e.titulo, e.subtitulo, e.contenido, e.fecha, e.slug,
                    a.nombre AS autor_nombre, a.apellidos AS autor_apellidos,
                    c.nombre AS categoria
             FROM entradas e

@@ -111,7 +111,7 @@ require_once 'config/constants.php';
         <!-- Navegacion PC -->
         <ul class="navbar__list">
           <li class="navbar__item">
-            <a href="#" class="navbar__link"> NOTICIAS </a>
+            <a href="<?= BASE_URL ?>views/list/list.php?tipo=noticia" class="navbar__link"> NOTICIAS </a>
             <div class="navbar__submenu">
               <!-- Una lista desplegable -->
               <ul class="navbar__sublist">
@@ -1034,7 +1034,7 @@ require_once 'config/constants.php';
               </div>
               <div class="news__detail">
                 <h4 class="news__title-post">
-                  <a href="#" class="news__link-title"> Lanzamientos más esperados para 2025 </a>
+                  <a href="views/article/article.php?id=2" class="news__link-title"> Lanzamientos más esperados para 2025 </a>
                 </h4>
                 <div class="news__data">
                   <a href="#" class="news__author">Jorge</a>

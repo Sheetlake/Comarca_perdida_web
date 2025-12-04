@@ -2092,6 +2092,16 @@ los propios elementos*/
     font-size: 3rem;
     font-weight: 700;
     color: var(--color-secondary);
+
+}
+.article__subtitle{    
+    font-size: 1.7rem;
+    font-weight: 700;
+    color: var(--color-textMarquee);
+    margin-top: 1.5rem;
+    margin-bottom: 3rem;
+    padding-bottom: 2rem;
+    border-bottom: 1px solid var(--color-bgMarquee);
 }
 
 
@@ -2122,6 +2132,7 @@ los propios elementos*/
     display: flex;
     flex-direction: row;
     align-items: center;
+    margin-bottom: 3rem;
 }
 
 /*Contenedor de la imagen del autor*/
@@ -2168,3 +2179,93 @@ los propios elementos*/
     color: var(--color-secondary);
 }
 
+
+
+
+/*********************************************************************************************/
+/*ESTILOS LISTAS DE ENTRADAS (list.php)*/ 
+/*********************************************************************************************/
+
+
+/* Contenedor de la lista */
+.alist__container {
+    width: 100%;
+    height: 100%;
+    margin: 3rem 0;
+    display: flex;
+    flex-direction: column;
+}
+
+/* Cada contenedor de cada elemento */
+.alist__item {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    gap: 2rem;
+    padding-bottom: 3rem;
+    border-bottom: 1px solid var(--color-bgMarquee)
+}
+
+a.list__item:last-child{
+    border-bottom: none;
+}
+
+/* Imagen del elemento */
+.alist__image {
+    width: 29rem;
+    overflow: hidden;
+}
+
+.alist__img {
+    width: 100%;
+    height: 100%;
+    transition: all 300ms ease;
+}
+
+.alist__img:hover{
+    transform: scale(1.1);
+}
+
+/* Contenedor de la info del elemento */
+.alist__info {
+    display: flex;
+    flex-direction: column;
+}
+
+/*Tipo de articulo*/
+.alist__type {
+    font-size: 1.2rem;
+    font-weight: 600;
+    color: var(--color-twitter);
+    text-transform: uppercase;
+    margin-bottom: 0.5rem;
+}
+
+/*Titulo del articulo*/
+.alist__title {
+    font-size: 2rem;
+    font-weight: 700;
+    color: var(--color-secondary);
+    margin-bottom: 0.5rem;
+    transition: all 200ms ease;
+}
+
+.alist__title:hover{
+    color: var(--color-bgNavbar);
+}
+
+.alist__subtitle {
+    font-size: 1.5rem;
+    font-weight: 400;
+    color: var(--color-secondary);
+    margin-bottom: 1rem;
+}
+
+/* Footer con autor y fecha */
+.alist__footer {
+    display: flex;
+    gap: 2rem;
+    margin-top: auto;
+    font-size: 1.2rem;
+    color: var(--color-twitter);
+}

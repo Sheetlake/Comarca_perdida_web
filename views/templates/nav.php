@@ -72,7 +72,7 @@
             <!-- Navegacion PC -->
             <ul class="navbar__list">
                 <li class="navbar__item">
-                    <a href="#" class="navbar__link"> NOTICIAS </a>
+                    <a href="<?= BASE_URL ?>views/list/list.php?tipo=noticia" class="navbar__link"> NOTICIAS </a>
                     <div class="navbar__submenu">
                         <!-- Una lista desplegable -->
                         <ul class="navbar__sublist">

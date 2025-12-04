@@ -64,6 +64,7 @@ $entrada = $idEntrada ? $controladorArticulos->obtenerEntradaPorId($idEntrada) :
             </div>
             <!-- Titulo -->
             <h1 class="article__title"><?= htmlspecialchars($entrada['titulo']) ?></h1>
+            <h2 class="article__subtitle"><?= htmlspecialchars($entrada['subtitulo']) ?></h2>
           </header>
 
           <!-- Contenido de la noticia -->
