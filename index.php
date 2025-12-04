@@ -603,7 +603,7 @@ require_once 'config/constants.php';
       </article>
       <article class="slider__container slider__container--slider2">
         <a href="#" class="slider__link">
-          <img src="<?= BASE_URL ?>assets/img/slider-2.jpg" class="slider__img" />
+          <img src="<?= BASE_URL ?>assets/img/slider-2.jfif" class="slider__img" />
         </a>
         <div class="slider__info">
           <a href="#" class="slider__category"> JUEGOS </a>
@@ -615,19 +615,19 @@ require_once 'config/constants.php';
       </article>
       <article class="slider__container slider__container--slider3">
         <a href="#" class="slider__link">
-          <img src="<?= BASE_URL ?>assets/img/slider-3.jpeg" class="slider__img" />
+          <img src="<?= BASE_URL ?>assets/img/slider-3.jpg" class="slider__img" />
         </a>
         <div class="slider__info">
           <a href="#" class="slider__category"> JUEGOS </a>
           <div class="slider__line"></div>
           <h2 class="slider__title">
-            <a href="#" class="slider__link-title">Microsoft compra Activision Blizzard</a>
+            <a href="#" class="slider__link-title">Clair Obscur: Expedition 33 Arrasa en los TGA</a>
           </h2>
         </div>
       </article>
       <article class="slider__container slider__container--slider4">
         <a href="#" class="slider__link">
-          <img src="<?= BASE_URL ?>assets/img/slider-5.png" class="slider__img" />
+          <img src="<?= BASE_URL ?>assets/img/slider-5.jpg" class="slider__img" />
         </a>
         <div class="slider__info">
           <a href="#" class="slider__category"> JUEGOS </a>
@@ -639,7 +639,7 @@ require_once 'config/constants.php';
       </article>
       <article class="slider__container slider__container--slider5">
         <a href="#" class="slider__link">
-          <img src="<?= BASE_URL ?>assets/img/slider-4.jpg" class="slider__img" />
+          <img src="<?= BASE_URL ?>assets/img/slider-42.jpg" class="slider__img" />
         </a>
         <div class="slider__info">
           <a href="#" class="slider__category"> JUEGOS </a>

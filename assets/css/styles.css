@@ -580,6 +580,7 @@ body{
     grid-area: slider5;
 }
 
+
 .slider__container{
     overflow: hidden;
     position: relative;
